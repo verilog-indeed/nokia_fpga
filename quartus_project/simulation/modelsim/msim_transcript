@@ -1,0 +1,188 @@
+# Reading pref.tcl
+# do hackathon_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/DevTools/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlib hackathon
+# vmap hackathon hackathon
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap hackathon hackathon 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work hackathon +incdir+D:/FPGAHackathon/nokia_fpga/src {D:/FPGAHackathon/nokia_fpga/src/top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:17 on Nov 26,2022
+# vlog -reportprogress 300 -vlog01compat -work hackathon "+incdir+D:/FPGAHackathon/nokia_fpga/src" D:/FPGAHackathon/nokia_fpga/src/top.v 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 16:15:17 on Nov 26,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work hackathon +incdir+D:/FPGAHackathon/nokia_fpga/src {D:/FPGAHackathon/nokia_fpga/src/eth_fifo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:18 on Nov 26,2022
+# vlog -reportprogress 300 -vlog01compat -work hackathon "+incdir+D:/FPGAHackathon/nokia_fpga/src" D:/FPGAHackathon/nokia_fpga/src/eth_fifo.v 
+# -- Compiling module eth_fifo
+# 
+# Top level modules:
+# 	eth_fifo
+# End time: 16:15:18 on Nov 26,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work hackathon +incdir+D:/FPGAHackathon/nokia_fpga/src {D:/FPGAHackathon/nokia_fpga/src/uart_fifo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:18 on Nov 26,2022
+# vlog -reportprogress 300 -vlog01compat -work hackathon "+incdir+D:/FPGAHackathon/nokia_fpga/src" D:/FPGAHackathon/nokia_fpga/src/uart_fifo.v 
+# -- Compiling module uart_fifo
+# 
+# Top level modules:
+# 	uart_fifo
+# End time: 16:15:18 on Nov 26,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work hackathon +incdir+D:/FPGAHackathon/nokia_fpga/src {D:/FPGAHackathon/nokia_fpga/src/control.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:18 on Nov 26,2022
+# vlog -reportprogress 300 -vlog01compat -work hackathon "+incdir+D:/FPGAHackathon/nokia_fpga/src" D:/FPGAHackathon/nokia_fpga/src/control.v 
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# End time: 16:15:18 on Nov 26,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work hackathon +incdir+D:/FPGAHackathon/nokia_fpga/src {D:/FPGAHackathon/nokia_fpga/src/debug_port.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:18 on Nov 26,2022
+# vlog -reportprogress 300 -vlog01compat -work hackathon "+incdir+D:/FPGAHackathon/nokia_fpga/src" D:/FPGAHackathon/nokia_fpga/src/debug_port.v 
+# -- Compiling module debug_port
+# 
+# Top level modules:
+# 	debug_port
+# End time: 16:15:18 on Nov 26,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work hackathon +incdir+D:/FPGAHackathon/nokia_fpga/src {D:/FPGAHackathon/nokia_fpga/src/mhp.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:18 on Nov 26,2022
+# vlog -reportprogress 300 -vlog01compat -work hackathon "+incdir+D:/FPGAHackathon/nokia_fpga/src" D:/FPGAHackathon/nokia_fpga/src/mhp.v 
+# -- Compiling module mhp
+# 
+# Top level modules:
+# 	mhp
+# End time: 16:15:18 on Nov 26,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work hackathon +incdir+D:/FPGAHackathon/nokia_fpga/src {D:/FPGAHackathon/nokia_fpga/src/task_manager.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:18 on Nov 26,2022
+# vlog -reportprogress 300 -vlog01compat -work hackathon "+incdir+D:/FPGAHackathon/nokia_fpga/src" D:/FPGAHackathon/nokia_fpga/src/task_manager.v 
+# -- Compiling module task_manager
+# 
+# Top level modules:
+# 	task_manager
+# End time: 16:15:19 on Nov 26,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work hackathon +incdir+D:/FPGAHackathon/nokia_fpga/src {D:/FPGAHackathon/nokia_fpga/src/cdc_pipeline.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:19 on Nov 26,2022
+# vlog -reportprogress 300 -sv -work hackathon "+incdir+D:/FPGAHackathon/nokia_fpga/src" D:/FPGAHackathon/nokia_fpga/src/cdc_pipeline.sv 
+# -- Compiling module cdc_pipeline
+# 
+# Top level modules:
+# 	cdc_pipeline
+# End time: 16:15:19 on Nov 26,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work hackathon +incdir+D:/FPGAHackathon/nokia_fpga/src {D:/FPGAHackathon/nokia_fpga/src/crc.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:19 on Nov 26,2022
+# vlog -reportprogress 300 -sv -work hackathon "+incdir+D:/FPGAHackathon/nokia_fpga/src" D:/FPGAHackathon/nokia_fpga/src/crc.sv 
+# -- Compiling module crc
+# 
+# Top level modules:
+# 	crc
+# End time: 16:15:19 on Nov 26,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work hackathon +incdir+D:/FPGAHackathon/nokia_fpga/src {D:/FPGAHackathon/nokia_fpga/src/mac_rx.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:19 on Nov 26,2022
+# vlog -reportprogress 300 -sv -work hackathon "+incdir+D:/FPGAHackathon/nokia_fpga/src" D:/FPGAHackathon/nokia_fpga/src/mac_rx.sv 
+# -- Compiling module mac_rx
+# 
+# Top level modules:
+# 	mac_rx
+# End time: 16:15:19 on Nov 26,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work hackathon +incdir+D:/FPGAHackathon/nokia_fpga/src {D:/FPGAHackathon/nokia_fpga/src/mac_tx.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:19 on Nov 26,2022
+# vlog -reportprogress 300 -sv -work hackathon "+incdir+D:/FPGAHackathon/nokia_fpga/src" D:/FPGAHackathon/nokia_fpga/src/mac_tx.sv 
+# -- Compiling module mac_tx
+# 
+# Top level modules:
+# 	mac_tx
+# End time: 16:15:19 on Nov 26,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work hackathon +incdir+D:/FPGAHackathon/nokia_fpga/src {D:/FPGAHackathon/nokia_fpga/src/mac_wrapper.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:19 on Nov 26,2022
+# vlog -reportprogress 300 -sv -work hackathon "+incdir+D:/FPGAHackathon/nokia_fpga/src" D:/FPGAHackathon/nokia_fpga/src/mac_wrapper.sv 
+# -- Compiling module mac_wrapper
+# 
+# Top level modules:
+# 	mac_wrapper
+# End time: 16:15:19 on Nov 26,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work hackathon +incdir+D:/FPGAHackathon/nokia_fpga/src {D:/FPGAHackathon/nokia_fpga/src/reset_release.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:19 on Nov 26,2022
+# vlog -reportprogress 300 -sv -work hackathon "+incdir+D:/FPGAHackathon/nokia_fpga/src" D:/FPGAHackathon/nokia_fpga/src/reset_release.sv 
+# -- Compiling module reset_release
+# 
+# Top level modules:
+# 	reset_release
+# End time: 16:15:19 on Nov 26,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work hackathon +incdir+D:/FPGAHackathon/nokia_fpga/src {D:/FPGAHackathon/nokia_fpga/src/uart_counter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:19 on Nov 26,2022
+# vlog -reportprogress 300 -sv -work hackathon "+incdir+D:/FPGAHackathon/nokia_fpga/src" D:/FPGAHackathon/nokia_fpga/src/uart_counter.sv 
+# -- Compiling module uart_counter
+# 
+# Top level modules:
+# 	uart_counter
+# End time: 16:15:19 on Nov 26,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work hackathon +incdir+D:/FPGAHackathon/nokia_fpga/src {D:/FPGAHackathon/nokia_fpga/src/uart_rx.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:19 on Nov 26,2022
+# vlog -reportprogress 300 -sv -work hackathon "+incdir+D:/FPGAHackathon/nokia_fpga/src" D:/FPGAHackathon/nokia_fpga/src/uart_rx.sv 
+# -- Compiling module uart_rx
+# 
+# Top level modules:
+# 	uart_rx
+# End time: 16:15:19 on Nov 26,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work hackathon +incdir+D:/FPGAHackathon/nokia_fpga/src {D:/FPGAHackathon/nokia_fpga/src/uart_tx.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:19 on Nov 26,2022
+# vlog -reportprogress 300 -sv -work hackathon "+incdir+D:/FPGAHackathon/nokia_fpga/src" D:/FPGAHackathon/nokia_fpga/src/uart_tx.sv 
+# -- Compiling module uart_tx
+# 
+# Top level modules:
+# 	uart_tx
+# End time: 16:15:20 on Nov 26,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work hackathon +incdir+D:/FPGAHackathon/nokia_fpga/src {D:/FPGAHackathon/nokia_fpga/src/uart_wrapper.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:20 on Nov 26,2022
+# vlog -reportprogress 300 -sv -work hackathon "+incdir+D:/FPGAHackathon/nokia_fpga/src" D:/FPGAHackathon/nokia_fpga/src/uart_wrapper.sv 
+# -- Compiling module uart_wrapper
+# 
+# Top level modules:
+# 	uart_wrapper
+# End time: 16:15:20 on Nov 26,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
