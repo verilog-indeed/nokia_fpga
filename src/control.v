@@ -24,26 +24,76 @@ module control(
 
 reg[7:0] uartTxByte;
 reg uartTxRdy;
+reg taskmanEn;
+reg[25:0] uartDelayCounter;
+reg[3:0] uartPrintCycle;
 
-reg[22:0] uartDelayCounter;
+wire[15:0] desty;
+wire[15:0] saucy;
+
 always@(posedge i_clk) begin
 	if (!i_rst) begin
 		uartDelayCounter <= uartDelayCounter + 1;
-		if (!uartDelayCounter && i_uart_wready) begin
-			uartTxByte <= 8'h65;
+		if (uartDelayCounter == 25'hFFFF) begin
+			taskmanEn <= 1;
+		end
+		if (uartDelayCounter == 0) begin
+			taskmanEn <= 0;
+		end
+		
+		if (addrGranted) begin
 			uartTxRdy <= 1;
-		end else begin
-			uartTxRdy <= 0;
+		end
+		
+		if (uartTxRdy == 1) begin
+			uartPrintCycle <= uartPrintCycle + 1;
+			case (uartPrintCycle)
+				0: begin
+					uartTxByte <= 8'h0A; //newline?
+				end
+				1: begin
+					uartTxByte <= 8'h24; //dollar sign
+				end
+				2: begin
+					uartTxByte <= desty[15:8];
+				end
+				3: begin
+					uartTxByte <= desty[7:0];
+				end
+				4: begin
+					uartTxByte <= saucy[15:8];
+				end
+				5: begin
+					uartTxByte <= saucy[7:0];
+				end
+				6: begin
+					uartTxByte <= 8'h24; //dollar sign
+				end
+				7: begin
+					uartTxByte <= 8'h0A; //newline?
+					uartTxRdy <= 0;
+				end
+				default: begin
+					uartPrintCycle <= 0;
+					uartTxRdy <= 0;
+				end
+			endcase
 		end
 	end
 end
 
+wire addrGranted;
 
 task_manager task_manager(
   //  sys
   .i_clk    (i_clk),
   .i_rst    (i_rst),
   .o_link   (o_link),
+  //data
+  .i_taskStart (taskmanEn),
+  .addrGrantStrobe (addrGranted),
+  .o_destAddr (desty),
+  .o_srcAddr (saucy),
   //  eth
   .i_rdata  (i_eth_rdata),
   .i_rready (i_eth_rready),

@@ -2,6 +2,12 @@ module task_manager(
   //  sys
   input           i_clk,      i_rst,
   output          o_link,
+  //data
+  input 				i_taskStart,
+  input 	 [15:0]	i_taskNbr,
+  output	 reg[15:0]  o_destAddr,
+  output	reg[15:0]  o_srcAddr,
+  output reg addrGrantStrobe,
   //  eth
   input   [7:0]   i_rdata,
   input           i_rready,
@@ -19,18 +25,62 @@ localparam    LINKED    = 2;
 
 wire          done;
 reg           link      = 0, send     = 0;
+reg mhpEnable;
+reg[15:0] currentTask;
+
+reg[6:0] mhpType;
+reg[15:0] dstAddr;
+reg[15:0] srcAddr;
+reg dataDir;
 
 always @(posedge i_clk) begin
-  if (i_rst) begin
-    link  <= 0;
-    send  <= 0;
-    state <= IDLE;
-  end
+	if (i_rst) begin
+		addrGrantStrobe <= 0;
+		mhpEnable <= 0;
+		link  <= 0;
+		send  <= 0;
+		currentTask <= 0;
+		state <= IDLE;
+	end else begin
+		case (state)
+			IDLE: begin
+				addrGrantStrobe <= 0;
+				link  <= 0;
+				send  <= 0;
+				mhpEnable <= 0;
+				if (i_taskStart) begin
+					link  <= 1;
+					currentTask <= i_taskNbr;
+					mhpEnable <= 1;
+					send  <=  1;
+					state <= CONNECTED;
+				end
+			end
+			CONNECTED: begin
+				if (done) begin
+					send <= 0;
+					state <= LINKED;
+				end
+			end
+			LINKED: begin
+				if (i_dType == 8'h04) begin
+					mhpEnable <= 0;
+					o_destAddr <= i_dstAddr;
+					o_srcAddr <= i_srcAddr;
+					addrGrantStrobe <= 1;
+					state <= IDLE;
+				end
+			end
+		endcase
+	end
+  
+  
+  /*
   else begin
     case (state)
       IDLE: begin
         link <= 0;
-        if  (done) begin
+        if (done) begin
           send  <=  1;
           state <= CONNECTED;
         end
@@ -51,7 +101,34 @@ always @(posedge i_clk) begin
       end
     endcase
   end
+  */
 end
+
+
+//decode from "READY" task number to appropriate MHP opcode
+always@(*) begin
+	case (currentTask[7:0])
+		8'h10: begin
+			mhpType = 7'h03;
+		end
+		8'h20: begin
+			mhpType = 7'h01;
+		end
+		8'h30: begin
+			mhpType = 7'h05;
+		end
+		default: begin
+			mhpType = 7'h00;
+		end
+	endcase
+end
+
+
+wire[6:0] o_mhpType = mhpType;
+
+wire[6:0] i_dType;
+wire[15:0] i_dstAddr;
+wire[15:0] i_srcAddr;
 
 mhp protocol(
   //  sys
@@ -59,7 +136,17 @@ mhp protocol(
   .i_rst    (i_rst),
   //  ctrl
   .i_send   (send),
+  .i_enable	(mhpEnable),
   .o_done   (done),
+  //  user data
+  .i_dst  ({16'hFFFF}),//not needed, destination will always be host?
+  .i_src  ({16'h0000}),//not needed, source will always be board?
+  .i_size	({16'h0000}), //temporary zero payload size
+  .i_dtype	({1'b1, o_mhpType}),
+  .o_dst	 (i_dstAddr),
+  .o_src	 (i_srcAddr),
+  .o_size (i_size),
+  .o_dtype(i_dType),
   //  eth
   .i_rdata  (i_rdata),
   .i_rready (i_rready),
