@@ -1,5 +1,5 @@
 Analysis & Synthesis report for hackathon
-Sat Nov 26 16:09:31 2022
+Sat Nov 26 16:45:06 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -111,13 +111,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Nov 26 16:09:31 2022       ;
+; Analysis & Synthesis Status     ; Successful - Sat Nov 26 16:45:06 2022       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; hackathon                                   ;
 ; Top-level Entity Name           ; top                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 586                                         ;
+; Total registers                 ; 609                                         ;
 ; Total pins                      ; 10                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 18,432                                      ;
@@ -240,23 +240,23 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+-----------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                        ; Library   ;
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+-----------+
-; ../src/top.v                     ; yes             ; User Verilog HDL File        ; D:/FPGAHackathon/hackathon_base-master/src/top.v                                    ; hackathon ;
-; ../src/eth_fifo.v                ; yes             ; User Verilog HDL File        ; D:/FPGAHackathon/hackathon_base-master/src/eth_fifo.v                               ; hackathon ;
-; ../src/uart_fifo.v               ; yes             ; User Verilog HDL File        ; D:/FPGAHackathon/hackathon_base-master/src/uart_fifo.v                              ; hackathon ;
-; ../src/cdc_pipeline.sv           ; yes             ; User SystemVerilog HDL File  ; D:/FPGAHackathon/hackathon_base-master/src/cdc_pipeline.sv                          ; hackathon ;
-; ../src/crc.sv                    ; yes             ; User SystemVerilog HDL File  ; D:/FPGAHackathon/hackathon_base-master/src/crc.sv                                   ; hackathon ;
-; ../src/mac_rx.sv                 ; yes             ; User SystemVerilog HDL File  ; D:/FPGAHackathon/hackathon_base-master/src/mac_rx.sv                                ; hackathon ;
-; ../src/mac_tx.sv                 ; yes             ; User SystemVerilog HDL File  ; D:/FPGAHackathon/hackathon_base-master/src/mac_tx.sv                                ; hackathon ;
-; ../src/mac_wrapper.sv            ; yes             ; User SystemVerilog HDL File  ; D:/FPGAHackathon/hackathon_base-master/src/mac_wrapper.sv                           ; hackathon ;
-; ../src/reset_release.sv          ; yes             ; User SystemVerilog HDL File  ; D:/FPGAHackathon/hackathon_base-master/src/reset_release.sv                         ; hackathon ;
-; ../src/uart_counter.sv           ; yes             ; User SystemVerilog HDL File  ; D:/FPGAHackathon/hackathon_base-master/src/uart_counter.sv                          ; hackathon ;
-; ../src/uart_rx.sv                ; yes             ; User SystemVerilog HDL File  ; D:/FPGAHackathon/hackathon_base-master/src/uart_rx.sv                               ; hackathon ;
-; ../src/uart_tx.sv                ; yes             ; User SystemVerilog HDL File  ; D:/FPGAHackathon/hackathon_base-master/src/uart_tx.sv                               ; hackathon ;
-; ../src/uart_wrapper.sv           ; yes             ; User SystemVerilog HDL File  ; D:/FPGAHackathon/hackathon_base-master/src/uart_wrapper.sv                          ; hackathon ;
-; ../src/control.v                 ; yes             ; User Verilog HDL File        ; D:/FPGAHackathon/hackathon_base-master/src/control.v                                ; hackathon ;
-; ../src/debug_port.v              ; yes             ; User Verilog HDL File        ; D:/FPGAHackathon/hackathon_base-master/src/debug_port.v                             ; hackathon ;
-; ../src/mhp.v                     ; yes             ; User Verilog HDL File        ; D:/FPGAHackathon/hackathon_base-master/src/mhp.v                                    ; hackathon ;
-; ../src/task_manager.v            ; yes             ; User Verilog HDL File        ; D:/FPGAHackathon/hackathon_base-master/src/task_manager.v                           ; hackathon ;
+; ../src/top.v                     ; yes             ; User Verilog HDL File        ; D:/FPGAHackathon/nokia_fpga/src/top.v                                               ; hackathon ;
+; ../src/eth_fifo.v                ; yes             ; User Verilog HDL File        ; D:/FPGAHackathon/nokia_fpga/src/eth_fifo.v                                          ; hackathon ;
+; ../src/uart_fifo.v               ; yes             ; User Verilog HDL File        ; D:/FPGAHackathon/nokia_fpga/src/uart_fifo.v                                         ; hackathon ;
+; ../src/cdc_pipeline.sv           ; yes             ; User SystemVerilog HDL File  ; D:/FPGAHackathon/nokia_fpga/src/cdc_pipeline.sv                                     ; hackathon ;
+; ../src/crc.sv                    ; yes             ; User SystemVerilog HDL File  ; D:/FPGAHackathon/nokia_fpga/src/crc.sv                                              ; hackathon ;
+; ../src/mac_rx.sv                 ; yes             ; User SystemVerilog HDL File  ; D:/FPGAHackathon/nokia_fpga/src/mac_rx.sv                                           ; hackathon ;
+; ../src/mac_tx.sv                 ; yes             ; User SystemVerilog HDL File  ; D:/FPGAHackathon/nokia_fpga/src/mac_tx.sv                                           ; hackathon ;
+; ../src/mac_wrapper.sv            ; yes             ; User SystemVerilog HDL File  ; D:/FPGAHackathon/nokia_fpga/src/mac_wrapper.sv                                      ; hackathon ;
+; ../src/reset_release.sv          ; yes             ; User SystemVerilog HDL File  ; D:/FPGAHackathon/nokia_fpga/src/reset_release.sv                                    ; hackathon ;
+; ../src/uart_counter.sv           ; yes             ; User SystemVerilog HDL File  ; D:/FPGAHackathon/nokia_fpga/src/uart_counter.sv                                     ; hackathon ;
+; ../src/uart_rx.sv                ; yes             ; User SystemVerilog HDL File  ; D:/FPGAHackathon/nokia_fpga/src/uart_rx.sv                                          ; hackathon ;
+; ../src/uart_tx.sv                ; yes             ; User SystemVerilog HDL File  ; D:/FPGAHackathon/nokia_fpga/src/uart_tx.sv                                          ; hackathon ;
+; ../src/uart_wrapper.sv           ; yes             ; User SystemVerilog HDL File  ; D:/FPGAHackathon/nokia_fpga/src/uart_wrapper.sv                                     ; hackathon ;
+; ../src/control.v                 ; yes             ; User Verilog HDL File        ; D:/FPGAHackathon/nokia_fpga/src/control.v                                           ; hackathon ;
+; ../src/debug_port.v              ; yes             ; User Verilog HDL File        ; D:/FPGAHackathon/nokia_fpga/src/debug_port.v                                        ; hackathon ;
+; ../src/mhp.v                     ; yes             ; User Verilog HDL File        ; D:/FPGAHackathon/nokia_fpga/src/mhp.v                                               ; hackathon ;
+; ../src/task_manager.v            ; yes             ; User Verilog HDL File        ; D:/FPGAHackathon/nokia_fpga/src/task_manager.v                                      ; hackathon ;
 ; scfifo.tdf                       ; yes             ; Megafunction                 ; d:/devtools/intelfpga_lite/20.1/quartus/libraries/megafunctions/scfifo.tdf          ;           ;
 ; a_regfifo.inc                    ; yes             ; Megafunction                 ; d:/devtools/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_regfifo.inc       ;           ;
 ; a_dpfifo.inc                     ; yes             ; Megafunction                 ; d:/devtools/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_dpfifo.inc        ;           ;
@@ -264,13 +264,13 @@ https://fpgasoftware.intel.com/eula.
 ; a_fffifo.inc                     ; yes             ; Megafunction                 ; d:/devtools/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_fffifo.inc        ;           ;
 ; a_f2fifo.inc                     ; yes             ; Megafunction                 ; d:/devtools/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_f2fifo.inc        ;           ;
 ; aglobal201.inc                   ; yes             ; Megafunction                 ; d:/devtools/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc      ;           ;
-; db/scfifo_s0b1.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/hackathon_base-master/quartus_project/db/scfifo_s0b1.tdf           ;           ;
-; db/a_dpfifo_foa1.tdf             ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/hackathon_base-master/quartus_project/db/a_dpfifo_foa1.tdf         ;           ;
-; db/altsyncram_nhn1.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/hackathon_base-master/quartus_project/db/altsyncram_nhn1.tdf       ;           ;
-; db/cmpr_7l8.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/hackathon_base-master/quartus_project/db/cmpr_7l8.tdf              ;           ;
-; db/cntr_i2b.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/hackathon_base-master/quartus_project/db/cntr_i2b.tdf              ;           ;
-; db/cntr_v27.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/hackathon_base-master/quartus_project/db/cntr_v27.tdf              ;           ;
-; db/cntr_j2b.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/hackathon_base-master/quartus_project/db/cntr_j2b.tdf              ;           ;
+; db/scfifo_s0b1.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/nokia_fpga/quartus_project/db/scfifo_s0b1.tdf                      ;           ;
+; db/a_dpfifo_foa1.tdf             ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/nokia_fpga/quartus_project/db/a_dpfifo_foa1.tdf                    ;           ;
+; db/altsyncram_nhn1.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/nokia_fpga/quartus_project/db/altsyncram_nhn1.tdf                  ;           ;
+; db/cmpr_7l8.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/nokia_fpga/quartus_project/db/cmpr_7l8.tdf                         ;           ;
+; db/cntr_i2b.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/nokia_fpga/quartus_project/db/cntr_i2b.tdf                         ;           ;
+; db/cntr_v27.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/nokia_fpga/quartus_project/db/cntr_v27.tdf                         ;           ;
+; db/cntr_j2b.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/nokia_fpga/quartus_project/db/cntr_j2b.tdf                         ;           ;
 ; dcfifo.tdf                       ; yes             ; Megafunction                 ; d:/devtools/intelfpga_lite/20.1/quartus/libraries/megafunctions/dcfifo.tdf          ;           ;
 ; lpm_counter.inc                  ; yes             ; Megafunction                 ; d:/devtools/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_counter.inc     ;           ;
 ; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; d:/devtools/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.inc     ;           ;
@@ -282,16 +282,16 @@ https://fpgasoftware.intel.com/eula.
 ; alt_sync_fifo.inc                ; yes             ; Megafunction                 ; d:/devtools/intelfpga_lite/20.1/quartus/libraries/megafunctions/alt_sync_fifo.inc   ;           ;
 ; lpm_compare.inc                  ; yes             ; Megafunction                 ; d:/devtools/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_compare.inc     ;           ;
 ; altsyncram_fifo.inc              ; yes             ; Megafunction                 ; d:/devtools/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram_fifo.inc ;           ;
-; db/dcfifo_82q1.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/hackathon_base-master/quartus_project/db/dcfifo_82q1.tdf           ;           ;
-; db/a_graycounter_pv6.tdf         ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/hackathon_base-master/quartus_project/db/a_graycounter_pv6.tdf     ;           ;
-; db/a_graycounter_ldc.tdf         ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/hackathon_base-master/quartus_project/db/a_graycounter_ldc.tdf     ;           ;
-; db/altsyncram_s5d1.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/hackathon_base-master/quartus_project/db/altsyncram_s5d1.tdf       ;           ;
-; db/dffpipe_3dc.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/hackathon_base-master/quartus_project/db/dffpipe_3dc.tdf           ;           ;
-; db/alt_synch_pipe_apl.tdf        ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/hackathon_base-master/quartus_project/db/alt_synch_pipe_apl.tdf    ;           ;
-; db/dffpipe_re9.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/hackathon_base-master/quartus_project/db/dffpipe_re9.tdf           ;           ;
-; db/alt_synch_pipe_bpl.tdf        ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/hackathon_base-master/quartus_project/db/alt_synch_pipe_bpl.tdf    ;           ;
-; db/dffpipe_se9.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/hackathon_base-master/quartus_project/db/dffpipe_se9.tdf           ;           ;
-; db/cmpr_b06.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/hackathon_base-master/quartus_project/db/cmpr_b06.tdf              ;           ;
+; db/dcfifo_82q1.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/nokia_fpga/quartus_project/db/dcfifo_82q1.tdf                      ;           ;
+; db/a_graycounter_pv6.tdf         ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/nokia_fpga/quartus_project/db/a_graycounter_pv6.tdf                ;           ;
+; db/a_graycounter_ldc.tdf         ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/nokia_fpga/quartus_project/db/a_graycounter_ldc.tdf                ;           ;
+; db/altsyncram_s5d1.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/nokia_fpga/quartus_project/db/altsyncram_s5d1.tdf                  ;           ;
+; db/dffpipe_3dc.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/nokia_fpga/quartus_project/db/dffpipe_3dc.tdf                      ;           ;
+; db/alt_synch_pipe_apl.tdf        ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/nokia_fpga/quartus_project/db/alt_synch_pipe_apl.tdf               ;           ;
+; db/dffpipe_re9.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/nokia_fpga/quartus_project/db/dffpipe_re9.tdf                      ;           ;
+; db/alt_synch_pipe_bpl.tdf        ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/nokia_fpga/quartus_project/db/alt_synch_pipe_bpl.tdf               ;           ;
+; db/dffpipe_se9.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/nokia_fpga/quartus_project/db/dffpipe_se9.tdf                      ;           ;
+; db/cmpr_b06.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/FPGAHackathon/nokia_fpga/quartus_project/db/cmpr_b06.tdf                         ;           ;
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+-----------+
 
 
@@ -300,16 +300,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 354          ;
+; Estimate of Logic utilization (ALMs needed) ; 368          ;
 ;                                             ;              ;
-; Combinational ALUT usage for logic          ; 442          ;
+; Combinational ALUT usage for logic          ; 471          ;
 ;     -- 7 input functions                    ; 3            ;
-;     -- 6 input functions                    ; 110          ;
-;     -- 5 input functions                    ; 53           ;
-;     -- 4 input functions                    ; 60           ;
-;     -- <=3 input functions                  ; 216          ;
+;     -- 6 input functions                    ; 109          ;
+;     -- 5 input functions                    ; 59           ;
+;     -- 4 input functions                    ; 62           ;
+;     -- <=3 input functions                  ; 238          ;
 ;                                             ;              ;
-; Dedicated logic registers                   ; 586          ;
+; Dedicated logic registers                   ; 609          ;
 ;                                             ;              ;
 ; I/O pins                                    ; 10           ;
 ; Total MLAB memory bits                      ; 0            ;
@@ -319,8 +319,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;              ;
 ; Maximum fan-out node                        ; L1_OSC~input ;
 ; Maximum fan-out                             ; 386          ;
-; Total fan-out                               ; 3790         ;
-; Average fan-out                             ; 3.56         ;
+; Total fan-out                               ; 3934         ;
+; Average fan-out                             ; 3.53         ;
 +---------------------------------------------+--------------+
 
 
@@ -329,9 +329,9 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                            ; Entity Name        ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------+
-; |top                                         ; 442 (1)             ; 586 (0)                   ; 18432             ; 0          ; 10   ; 0            ; |top                                                                                                                                           ; top                ; hackathon    ;
+; |top                                         ; 471 (1)             ; 609 (0)                   ; 18432             ; 0          ; 10   ; 0            ; |top                                                                                                                                           ; top                ; hackathon    ;
 ;    |cdc_pipeline:reset_phy_pipe|             ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |top|cdc_pipeline:reset_phy_pipe                                                                                                               ; cdc_pipeline       ; hackathon    ;
-;    |control:main|                            ; 11 (0)              ; 11 (1)                    ; 0                 ; 0          ; 0    ; 0            ; |top|control:main                                                                                                                              ; control            ; hackathon    ;
+;    |control:main|                            ; 40 (29)             ; 34 (24)                   ; 0                 ; 0          ; 0    ; 0            ; |top|control:main                                                                                                                              ; control            ; hackathon    ;
 ;       |debug_port:debug_port|                ; 6 (6)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |top|control:main|debug_port:debug_port                                                                                                        ; debug_port         ; hackathon    ;
 ;       |task_manager:task_manager|            ; 5 (0)               ; 4 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|control:main|task_manager:task_manager                                                                                                    ; task_manager       ; hackathon    ;
 ;          |mhp:protocol|                      ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |top|control:main|task_manager:task_manager|mhp:protocol                                                                                       ; mhp                ; hackathon    ;
@@ -367,11 +367,11 @@ https://fpgasoftware.intel.com/eula.
 ;       |mac_tx:mac_tx|                        ; 158 (70)            ; 142 (65)                  ; 0                 ; 0          ; 0    ; 0            ; |top|mac_wrapper:mac_wrapper|mac_tx:mac_tx                                                                                                     ; mac_tx             ; hackathon    ;
 ;          |crc:add_crc|                       ; 88 (88)             ; 77 (77)                   ; 0                 ; 0          ; 0    ; 0            ; |top|mac_wrapper:mac_wrapper|mac_tx:mac_tx|crc:add_crc                                                                                         ; crc                ; hackathon    ;
 ;    |reset_release:reset_release|             ; 18 (18)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |top|reset_release:reset_release                                                                                                               ; reset_release      ; hackathon    ;
-;    |uart_wrapper:uart_wrapper|               ; 86 (1)              ; 68 (0)                    ; 2048              ; 0          ; 0    ; 0            ; |top|uart_wrapper:uart_wrapper                                                                                                                 ; uart_wrapper       ; hackathon    ;
-;       |uart_fifo:tx_fifo|                    ; 58 (0)              ; 39 (0)                    ; 2048              ; 0          ; 0    ; 0            ; |top|uart_wrapper:uart_wrapper|uart_fifo:tx_fifo                                                                                               ; uart_fifo          ; hackathon    ;
-;          |scfifo:scfifo8bx256|               ; 58 (0)              ; 39 (0)                    ; 2048              ; 0          ; 0    ; 0            ; |top|uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256                                                                           ; scfifo             ; work         ;
-;             |scfifo_s0b1:auto_generated|     ; 58 (0)              ; 39 (0)                    ; 2048              ; 0          ; 0    ; 0            ; |top|uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated                                                ; scfifo_s0b1        ; work         ;
-;                |a_dpfifo_foa1:dpfifo|        ; 58 (33)             ; 39 (16)                   ; 2048              ; 0          ; 0    ; 0            ; |top|uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo                           ; a_dpfifo_foa1      ; work         ;
+;    |uart_wrapper:uart_wrapper|               ; 86 (0)              ; 68 (0)                    ; 2048              ; 0          ; 0    ; 0            ; |top|uart_wrapper:uart_wrapper                                                                                                                 ; uart_wrapper       ; hackathon    ;
+;       |uart_fifo:tx_fifo|                    ; 59 (0)              ; 39 (0)                    ; 2048              ; 0          ; 0    ; 0            ; |top|uart_wrapper:uart_wrapper|uart_fifo:tx_fifo                                                                                               ; uart_fifo          ; hackathon    ;
+;          |scfifo:scfifo8bx256|               ; 59 (0)              ; 39 (0)                    ; 2048              ; 0          ; 0    ; 0            ; |top|uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256                                                                           ; scfifo             ; work         ;
+;             |scfifo_s0b1:auto_generated|     ; 59 (0)              ; 39 (0)                    ; 2048              ; 0          ; 0    ; 0            ; |top|uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated                                                ; scfifo_s0b1        ; work         ;
+;                |a_dpfifo_foa1:dpfifo|        ; 59 (34)             ; 39 (16)                   ; 2048              ; 0          ; 0    ; 0            ; |top|uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo                           ; a_dpfifo_foa1      ; work         ;
 ;                   |altsyncram_nhn1:FIFOram|  ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |top|uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|altsyncram_nhn1:FIFOram   ; altsyncram_nhn1    ; work         ;
 ;                   |cntr_i2b:rd_ptr_msb|      ; 8 (8)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |top|uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|cntr_i2b:rd_ptr_msb       ; cntr_i2b           ; work         ;
 ;                   |cntr_j2b:wr_ptr|          ; 9 (9)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |top|uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|cntr_j2b:wr_ptr           ; cntr_j2b           ; work         ;
@@ -842,12 +842,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 586   ;
+; Total registers                              ; 609   ;
 ; Number of registers using Synchronous Clear  ; 73    ;
 ; Number of registers using Synchronous Load   ; 1     ;
 ; Number of registers using Asynchronous Clear ; 253   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 283   ;
+; Number of registers using Clock Enable       ; 306   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -1591,33 +1591,33 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 586                         ;
+; arriav_ff             ; 609                         ;
 ;     CLR               ; 193                         ;
-;     ENA               ; 169                         ;
+;     ENA               ; 192                         ;
 ;     ENA CLR           ; 60                          ;
 ;     ENA SCLR          ; 54                          ;
 ;     SCLR              ; 18                          ;
 ;     SCLR SLD          ; 1                           ;
 ;     plain             ; 91                          ;
-; arriav_lcell_comb     ; 442                         ;
-;     arith             ; 67                          ;
-;         1 data inputs ; 60                          ;
-;         2 data inputs ; 7                           ;
+; arriav_lcell_comb     ; 471                         ;
+;     arith             ; 89                          ;
+;         1 data inputs ; 81                          ;
+;         2 data inputs ; 8                           ;
 ;     extend            ; 3                           ;
 ;         7 data inputs ; 3                           ;
-;     normal            ; 372                         ;
+;     normal            ; 379                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 47                          ;
-;         2 data inputs ; 57                          ;
+;         1 data inputs ; 48                          ;
+;         2 data inputs ; 56                          ;
 ;         3 data inputs ; 44                          ;
-;         4 data inputs ; 60                          ;
-;         5 data inputs ; 53                          ;
-;         6 data inputs ; 110                         ;
+;         4 data inputs ; 62                          ;
+;         5 data inputs ; 59                          ;
+;         6 data inputs ; 109                         ;
 ; boundary_port         ; 10                          ;
 ; stratixv_ram_block    ; 16                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 2.16                        ;
+; Average LUT depth     ; 2.18                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1626,7 +1626,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -1636,53 +1636,53 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Nov 26 16:09:03 2022
+    Info: Processing started: Sat Nov 26 16:44:34 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off hackathon -c hackathon
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/hackathon_base-master/src/top.v
-    Info (12023): Found entity 1: top File: D:/FPGAHackathon/hackathon_base-master/src/top.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/hackathon_base-master/src/eth_fifo.v
-    Info (12023): Found entity 1: eth_fifo File: D:/FPGAHackathon/hackathon_base-master/src/eth_fifo.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/hackathon_base-master/src/uart_fifo.v
-    Info (12023): Found entity 1: uart_fifo File: D:/FPGAHackathon/hackathon_base-master/src/uart_fifo.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/hackathon_base-master/src/cdc_pipeline.sv
-    Info (12023): Found entity 1: cdc_pipeline File: D:/FPGAHackathon/hackathon_base-master/src/cdc_pipeline.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/hackathon_base-master/src/crc.sv
-    Info (12023): Found entity 1: crc File: D:/FPGAHackathon/hackathon_base-master/src/crc.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/hackathon_base-master/src/mac_rx.sv
-    Info (12023): Found entity 1: mac_rx File: D:/FPGAHackathon/hackathon_base-master/src/mac_rx.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/hackathon_base-master/src/mac_tx.sv
-    Info (12023): Found entity 1: mac_tx File: D:/FPGAHackathon/hackathon_base-master/src/mac_tx.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/hackathon_base-master/src/mac_wrapper.sv
-    Info (12023): Found entity 1: mac_wrapper File: D:/FPGAHackathon/hackathon_base-master/src/mac_wrapper.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/hackathon_base-master/src/reset_release.sv
-    Info (12023): Found entity 1: reset_release File: D:/FPGAHackathon/hackathon_base-master/src/reset_release.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/hackathon_base-master/src/uart_counter.sv
-    Info (12023): Found entity 1: uart_counter File: D:/FPGAHackathon/hackathon_base-master/src/uart_counter.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/hackathon_base-master/src/uart_rx.sv
-    Info (12023): Found entity 1: uart_rx File: D:/FPGAHackathon/hackathon_base-master/src/uart_rx.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/hackathon_base-master/src/uart_tx.sv
-    Info (12023): Found entity 1: uart_tx File: D:/FPGAHackathon/hackathon_base-master/src/uart_tx.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/hackathon_base-master/src/uart_wrapper.sv
-    Info (12023): Found entity 1: uart_wrapper File: D:/FPGAHackathon/hackathon_base-master/src/uart_wrapper.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/hackathon_base-master/src/control.v
-    Info (12023): Found entity 1: control File: D:/FPGAHackathon/hackathon_base-master/src/control.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/hackathon_base-master/src/debug_port.v
-    Info (12023): Found entity 1: debug_port File: D:/FPGAHackathon/hackathon_base-master/src/debug_port.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/hackathon_base-master/src/mhp.v
-    Info (12023): Found entity 1: mhp File: D:/FPGAHackathon/hackathon_base-master/src/mhp.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/hackathon_base-master/src/task_manager.v
-    Info (12023): Found entity 1: task_manager File: D:/FPGAHackathon/hackathon_base-master/src/task_manager.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/hackathon_base-master/src/tb/tb_top.sv
-    Info (12023): Found entity 1: tb_top File: D:/FPGAHackathon/hackathon_base-master/src/tb/tb_top.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/nokia_fpga/src/top.v
+    Info (12023): Found entity 1: top File: D:/FPGAHackathon/nokia_fpga/src/top.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/nokia_fpga/src/eth_fifo.v
+    Info (12023): Found entity 1: eth_fifo File: D:/FPGAHackathon/nokia_fpga/src/eth_fifo.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/nokia_fpga/src/uart_fifo.v
+    Info (12023): Found entity 1: uart_fifo File: D:/FPGAHackathon/nokia_fpga/src/uart_fifo.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/nokia_fpga/src/cdc_pipeline.sv
+    Info (12023): Found entity 1: cdc_pipeline File: D:/FPGAHackathon/nokia_fpga/src/cdc_pipeline.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/nokia_fpga/src/crc.sv
+    Info (12023): Found entity 1: crc File: D:/FPGAHackathon/nokia_fpga/src/crc.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/nokia_fpga/src/mac_rx.sv
+    Info (12023): Found entity 1: mac_rx File: D:/FPGAHackathon/nokia_fpga/src/mac_rx.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/nokia_fpga/src/mac_tx.sv
+    Info (12023): Found entity 1: mac_tx File: D:/FPGAHackathon/nokia_fpga/src/mac_tx.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/nokia_fpga/src/mac_wrapper.sv
+    Info (12023): Found entity 1: mac_wrapper File: D:/FPGAHackathon/nokia_fpga/src/mac_wrapper.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/nokia_fpga/src/reset_release.sv
+    Info (12023): Found entity 1: reset_release File: D:/FPGAHackathon/nokia_fpga/src/reset_release.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/nokia_fpga/src/uart_counter.sv
+    Info (12023): Found entity 1: uart_counter File: D:/FPGAHackathon/nokia_fpga/src/uart_counter.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/nokia_fpga/src/uart_rx.sv
+    Info (12023): Found entity 1: uart_rx File: D:/FPGAHackathon/nokia_fpga/src/uart_rx.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/nokia_fpga/src/uart_tx.sv
+    Info (12023): Found entity 1: uart_tx File: D:/FPGAHackathon/nokia_fpga/src/uart_tx.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/nokia_fpga/src/uart_wrapper.sv
+    Info (12023): Found entity 1: uart_wrapper File: D:/FPGAHackathon/nokia_fpga/src/uart_wrapper.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/nokia_fpga/src/control.v
+    Info (12023): Found entity 1: control File: D:/FPGAHackathon/nokia_fpga/src/control.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/nokia_fpga/src/debug_port.v
+    Info (12023): Found entity 1: debug_port File: D:/FPGAHackathon/nokia_fpga/src/debug_port.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/nokia_fpga/src/mhp.v
+    Info (12023): Found entity 1: mhp File: D:/FPGAHackathon/nokia_fpga/src/mhp.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/nokia_fpga/src/task_manager.v
+    Info (12023): Found entity 1: task_manager File: D:/FPGAHackathon/nokia_fpga/src/task_manager.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /fpgahackathon/nokia_fpga/src/tb/tb_top.sv
+    Info (12023): Found entity 1: tb_top File: D:/FPGAHackathon/nokia_fpga/src/tb/tb_top.sv Line: 3
 Info (12127): Elaborating entity "top" for the top level hierarchy
-Info (12128): Elaborating entity "reset_release" for hierarchy "reset_release:reset_release" File: D:/FPGAHackathon/hackathon_base-master/src/top.v Line: 26
-Info (12128): Elaborating entity "uart_wrapper" for hierarchy "uart_wrapper:uart_wrapper" File: D:/FPGAHackathon/hackathon_base-master/src/top.v Line: 59
-Info (12128): Elaborating entity "uart_fifo" for hierarchy "uart_wrapper:uart_wrapper|uart_fifo:tx_fifo" File: D:/FPGAHackathon/hackathon_base-master/src/uart_wrapper.sv Line: 41
-Info (12128): Elaborating entity "scfifo" for hierarchy "uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256" File: D:/FPGAHackathon/hackathon_base-master/src/uart_fifo.v Line: 30
-Info (12130): Elaborated megafunction instantiation "uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256" File: D:/FPGAHackathon/hackathon_base-master/src/uart_fifo.v Line: 30
-Info (12133): Instantiated megafunction "uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256" with the following parameter: File: D:/FPGAHackathon/hackathon_base-master/src/uart_fifo.v Line: 30
+Info (12128): Elaborating entity "reset_release" for hierarchy "reset_release:reset_release" File: D:/FPGAHackathon/nokia_fpga/src/top.v Line: 26
+Info (12128): Elaborating entity "uart_wrapper" for hierarchy "uart_wrapper:uart_wrapper" File: D:/FPGAHackathon/nokia_fpga/src/top.v Line: 59
+Info (12128): Elaborating entity "uart_fifo" for hierarchy "uart_wrapper:uart_wrapper|uart_fifo:tx_fifo" File: D:/FPGAHackathon/nokia_fpga/src/uart_wrapper.sv Line: 41
+Info (12128): Elaborating entity "scfifo" for hierarchy "uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256" File: D:/FPGAHackathon/nokia_fpga/src/uart_fifo.v Line: 30
+Info (12130): Elaborated megafunction instantiation "uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256" File: D:/FPGAHackathon/nokia_fpga/src/uart_fifo.v Line: 30
+Info (12133): Instantiated megafunction "uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256" with the following parameter: File: D:/FPGAHackathon/nokia_fpga/src/uart_fifo.v Line: 30
     Info (12134): Parameter "add_ram_output_register" = "ON"
     Info (12134): Parameter "enable_ecc" = "FALSE"
     Info (12134): Parameter "intended_device_family" = "Cyclone V"
@@ -1695,43 +1695,43 @@ Info (12133): Instantiated megafunction "uart_wrapper:uart_wrapper|uart_fifo:tx_
     Info (12134): Parameter "underflow_checking" = "ON"
     Info (12134): Parameter "use_eab" = "ON"
 Info (12021): Found 1 design units, including 1 entities, in source file db/scfifo_s0b1.tdf
-    Info (12023): Found entity 1: scfifo_s0b1 File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/scfifo_s0b1.tdf Line: 25
+    Info (12023): Found entity 1: scfifo_s0b1 File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/scfifo_s0b1.tdf Line: 25
 Info (12128): Elaborating entity "scfifo_s0b1" for hierarchy "uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated" File: d:/devtools/intelfpga_lite/20.1/quartus/libraries/megafunctions/scfifo.tdf Line: 300
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_dpfifo_foa1.tdf
-    Info (12023): Found entity 1: a_dpfifo_foa1 File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/a_dpfifo_foa1.tdf Line: 33
-Info (12128): Elaborating entity "a_dpfifo_foa1" for hierarchy "uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/scfifo_s0b1.tdf Line: 37
+    Info (12023): Found entity 1: a_dpfifo_foa1 File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/a_dpfifo_foa1.tdf Line: 33
+Info (12128): Elaborating entity "a_dpfifo_foa1" for hierarchy "uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/scfifo_s0b1.tdf Line: 37
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_nhn1.tdf
-    Info (12023): Found entity 1: altsyncram_nhn1 File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/altsyncram_nhn1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_nhn1" for hierarchy "uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|altsyncram_nhn1:FIFOram" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/a_dpfifo_foa1.tdf Line: 45
+    Info (12023): Found entity 1: altsyncram_nhn1 File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/altsyncram_nhn1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_nhn1" for hierarchy "uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|altsyncram_nhn1:FIFOram" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/a_dpfifo_foa1.tdf Line: 45
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_7l8.tdf
-    Info (12023): Found entity 1: cmpr_7l8 File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/cmpr_7l8.tdf Line: 23
-Info (12128): Elaborating entity "cmpr_7l8" for hierarchy "uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|cmpr_7l8:almost_full_comparer" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/a_dpfifo_foa1.tdf Line: 54
-Info (12128): Elaborating entity "cmpr_7l8" for hierarchy "uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|cmpr_7l8:three_comparison" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/a_dpfifo_foa1.tdf Line: 55
+    Info (12023): Found entity 1: cmpr_7l8 File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/cmpr_7l8.tdf Line: 23
+Info (12128): Elaborating entity "cmpr_7l8" for hierarchy "uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|cmpr_7l8:almost_full_comparer" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/a_dpfifo_foa1.tdf Line: 54
+Info (12128): Elaborating entity "cmpr_7l8" for hierarchy "uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|cmpr_7l8:three_comparison" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/a_dpfifo_foa1.tdf Line: 55
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_i2b.tdf
-    Info (12023): Found entity 1: cntr_i2b File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/cntr_i2b.tdf Line: 26
-Info (12128): Elaborating entity "cntr_i2b" for hierarchy "uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|cntr_i2b:rd_ptr_msb" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/a_dpfifo_foa1.tdf Line: 56
+    Info (12023): Found entity 1: cntr_i2b File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/cntr_i2b.tdf Line: 26
+Info (12128): Elaborating entity "cntr_i2b" for hierarchy "uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|cntr_i2b:rd_ptr_msb" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/a_dpfifo_foa1.tdf Line: 56
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_v27.tdf
-    Info (12023): Found entity 1: cntr_v27 File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/cntr_v27.tdf Line: 26
-Info (12128): Elaborating entity "cntr_v27" for hierarchy "uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|cntr_v27:usedw_counter" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/a_dpfifo_foa1.tdf Line: 57
+    Info (12023): Found entity 1: cntr_v27 File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/cntr_v27.tdf Line: 26
+Info (12128): Elaborating entity "cntr_v27" for hierarchy "uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|cntr_v27:usedw_counter" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/a_dpfifo_foa1.tdf Line: 57
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_j2b.tdf
-    Info (12023): Found entity 1: cntr_j2b File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/cntr_j2b.tdf Line: 26
-Info (12128): Elaborating entity "cntr_j2b" for hierarchy "uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|cntr_j2b:wr_ptr" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/a_dpfifo_foa1.tdf Line: 58
-Info (12128): Elaborating entity "uart_tx" for hierarchy "uart_wrapper:uart_wrapper|uart_tx:uart_tx" File: D:/FPGAHackathon/hackathon_base-master/src/uart_wrapper.sv Line: 56
-Info (10264): Verilog HDL Case Statement information at uart_tx.sv(55): all case item expressions in this case statement are onehot File: D:/FPGAHackathon/hackathon_base-master/src/uart_tx.sv Line: 55
-Info (12128): Elaborating entity "uart_counter" for hierarchy "uart_wrapper:uart_wrapper|uart_tx:uart_tx|uart_counter:ctx" File: D:/FPGAHackathon/hackathon_base-master/src/uart_tx.sv Line: 68
-Info (12128): Elaborating entity "uart_counter" for hierarchy "uart_wrapper:uart_wrapper|uart_tx:uart_tx|uart_counter:data_count" File: D:/FPGAHackathon/hackathon_base-master/src/uart_tx.sv Line: 77
-Info (12128): Elaborating entity "uart_rx" for hierarchy "uart_wrapper:uart_wrapper|uart_rx:uart_rx" File: D:/FPGAHackathon/hackathon_base-master/src/uart_wrapper.sv Line: 78
-Warning (10230): Verilog HDL assignment warning at uart_rx.sv(42): truncated value with size 32 to match size of target (1) File: D:/FPGAHackathon/hackathon_base-master/src/uart_rx.sv Line: 42
-Info (12128): Elaborating entity "cdc_pipeline" for hierarchy "cdc_pipeline:reset_phy_pipe" File: D:/FPGAHackathon/hackathon_base-master/src/top.v Line: 76
-Info (12128): Elaborating entity "mac_wrapper" for hierarchy "mac_wrapper:mac_wrapper" File: D:/FPGAHackathon/hackathon_base-master/src/top.v Line: 97
-Info (12128): Elaborating entity "mac_rx" for hierarchy "mac_wrapper:mac_wrapper|mac_rx:mac_rx" File: D:/FPGAHackathon/hackathon_base-master/src/mac_wrapper.sv Line: 50
-Warning (10230): Verilog HDL assignment warning at mac_rx.sv(47): truncated value with size 32 to match size of target (1) File: D:/FPGAHackathon/hackathon_base-master/src/mac_rx.sv Line: 47
+    Info (12023): Found entity 1: cntr_j2b File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/cntr_j2b.tdf Line: 26
+Info (12128): Elaborating entity "cntr_j2b" for hierarchy "uart_wrapper:uart_wrapper|uart_fifo:tx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|cntr_j2b:wr_ptr" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/a_dpfifo_foa1.tdf Line: 58
+Info (12128): Elaborating entity "uart_tx" for hierarchy "uart_wrapper:uart_wrapper|uart_tx:uart_tx" File: D:/FPGAHackathon/nokia_fpga/src/uart_wrapper.sv Line: 56
+Info (10264): Verilog HDL Case Statement information at uart_tx.sv(55): all case item expressions in this case statement are onehot File: D:/FPGAHackathon/nokia_fpga/src/uart_tx.sv Line: 55
+Info (12128): Elaborating entity "uart_counter" for hierarchy "uart_wrapper:uart_wrapper|uart_tx:uart_tx|uart_counter:ctx" File: D:/FPGAHackathon/nokia_fpga/src/uart_tx.sv Line: 68
+Info (12128): Elaborating entity "uart_counter" for hierarchy "uart_wrapper:uart_wrapper|uart_tx:uart_tx|uart_counter:data_count" File: D:/FPGAHackathon/nokia_fpga/src/uart_tx.sv Line: 77
+Info (12128): Elaborating entity "uart_rx" for hierarchy "uart_wrapper:uart_wrapper|uart_rx:uart_rx" File: D:/FPGAHackathon/nokia_fpga/src/uart_wrapper.sv Line: 78
+Warning (10230): Verilog HDL assignment warning at uart_rx.sv(42): truncated value with size 32 to match size of target (1) File: D:/FPGAHackathon/nokia_fpga/src/uart_rx.sv Line: 42
+Info (12128): Elaborating entity "cdc_pipeline" for hierarchy "cdc_pipeline:reset_phy_pipe" File: D:/FPGAHackathon/nokia_fpga/src/top.v Line: 76
+Info (12128): Elaborating entity "mac_wrapper" for hierarchy "mac_wrapper:mac_wrapper" File: D:/FPGAHackathon/nokia_fpga/src/top.v Line: 97
+Info (12128): Elaborating entity "mac_rx" for hierarchy "mac_wrapper:mac_wrapper|mac_rx:mac_rx" File: D:/FPGAHackathon/nokia_fpga/src/mac_wrapper.sv Line: 50
+Warning (10230): Verilog HDL assignment warning at mac_rx.sv(47): truncated value with size 32 to match size of target (1) File: D:/FPGAHackathon/nokia_fpga/src/mac_rx.sv Line: 47
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "dst_mac_in" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "etype" into its bus
-Info (12128): Elaborating entity "eth_fifo" for hierarchy "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo" File: D:/FPGAHackathon/hackathon_base-master/src/mac_wrapper.sv Line: 66
-Info (12128): Elaborating entity "dcfifo" for hierarchy "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048" File: D:/FPGAHackathon/hackathon_base-master/src/eth_fifo.v Line: 33
-Info (12130): Elaborated megafunction instantiation "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048" File: D:/FPGAHackathon/hackathon_base-master/src/eth_fifo.v Line: 33
-Info (12133): Instantiated megafunction "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048" with the following parameter: File: D:/FPGAHackathon/hackathon_base-master/src/eth_fifo.v Line: 33
+Info (12128): Elaborating entity "eth_fifo" for hierarchy "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo" File: D:/FPGAHackathon/nokia_fpga/src/mac_wrapper.sv Line: 66
+Info (12128): Elaborating entity "dcfifo" for hierarchy "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048" File: D:/FPGAHackathon/nokia_fpga/src/eth_fifo.v Line: 33
+Info (12130): Elaborated megafunction instantiation "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048" File: D:/FPGAHackathon/nokia_fpga/src/eth_fifo.v Line: 33
+Info (12133): Instantiated megafunction "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048" with the following parameter: File: D:/FPGAHackathon/nokia_fpga/src/eth_fifo.v Line: 33
     Info (12134): Parameter "intended_device_family" = "Cyclone V"
     Info (12134): Parameter "lpm_numwords" = "2048"
     Info (12134): Parameter "lpm_showahead" = "OFF"
@@ -1746,97 +1746,98 @@ Info (12133): Instantiated megafunction "mac_wrapper:mac_wrapper|eth_fifo:rx_fif
     Info (12134): Parameter "write_aclr_synch" = "ON"
     Info (12134): Parameter "wrsync_delaypipe" = "4"
 Info (12021): Found 1 design units, including 1 entities, in source file db/dcfifo_82q1.tdf
-    Info (12023): Found entity 1: dcfifo_82q1 File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/dcfifo_82q1.tdf Line: 39
+    Info (12023): Found entity 1: dcfifo_82q1 File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/dcfifo_82q1.tdf Line: 39
 Info (12128): Elaborating entity "dcfifo_82q1" for hierarchy "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated" File: d:/devtools/intelfpga_lite/20.1/quartus/libraries/megafunctions/dcfifo.tdf Line: 191
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_graycounter_pv6.tdf
-    Info (12023): Found entity 1: a_graycounter_pv6 File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/a_graycounter_pv6.tdf Line: 25
-Info (12128): Elaborating entity "a_graycounter_pv6" for hierarchy "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|a_graycounter_pv6:rdptr_g1p" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/dcfifo_82q1.tdf Line: 52
+    Info (12023): Found entity 1: a_graycounter_pv6 File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/a_graycounter_pv6.tdf Line: 25
+Info (12128): Elaborating entity "a_graycounter_pv6" for hierarchy "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|a_graycounter_pv6:rdptr_g1p" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/dcfifo_82q1.tdf Line: 52
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_graycounter_ldc.tdf
-    Info (12023): Found entity 1: a_graycounter_ldc File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/a_graycounter_ldc.tdf Line: 25
-Info (12128): Elaborating entity "a_graycounter_ldc" for hierarchy "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|a_graycounter_ldc:wrptr_g1p" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/dcfifo_82q1.tdf Line: 53
+    Info (12023): Found entity 1: a_graycounter_ldc File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/a_graycounter_ldc.tdf Line: 25
+Info (12128): Elaborating entity "a_graycounter_ldc" for hierarchy "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|a_graycounter_ldc:wrptr_g1p" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/dcfifo_82q1.tdf Line: 53
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_s5d1.tdf
-    Info (12023): Found entity 1: altsyncram_s5d1 File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/altsyncram_s5d1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_s5d1" for hierarchy "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|altsyncram_s5d1:fifo_ram" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/dcfifo_82q1.tdf Line: 54
+    Info (12023): Found entity 1: altsyncram_s5d1 File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/altsyncram_s5d1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_s5d1" for hierarchy "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|altsyncram_s5d1:fifo_ram" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/dcfifo_82q1.tdf Line: 54
 Info (12021): Found 1 design units, including 1 entities, in source file db/dffpipe_3dc.tdf
-    Info (12023): Found entity 1: dffpipe_3dc File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/dffpipe_3dc.tdf Line: 25
-Info (12128): Elaborating entity "dffpipe_3dc" for hierarchy "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|dffpipe_3dc:rdaclr" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/dcfifo_82q1.tdf Line: 61
+    Info (12023): Found entity 1: dffpipe_3dc File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/dffpipe_3dc.tdf Line: 25
+Info (12128): Elaborating entity "dffpipe_3dc" for hierarchy "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|dffpipe_3dc:rdaclr" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/dcfifo_82q1.tdf Line: 61
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_synch_pipe_apl.tdf
-    Info (12023): Found entity 1: alt_synch_pipe_apl File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/alt_synch_pipe_apl.tdf Line: 27
-Info (12128): Elaborating entity "alt_synch_pipe_apl" for hierarchy "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|alt_synch_pipe_apl:rs_dgwp" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/dcfifo_82q1.tdf Line: 62
+    Info (12023): Found entity 1: alt_synch_pipe_apl File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/alt_synch_pipe_apl.tdf Line: 27
+Info (12128): Elaborating entity "alt_synch_pipe_apl" for hierarchy "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|alt_synch_pipe_apl:rs_dgwp" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/dcfifo_82q1.tdf Line: 62
 Info (12021): Found 1 design units, including 1 entities, in source file db/dffpipe_re9.tdf
-    Info (12023): Found entity 1: dffpipe_re9 File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/dffpipe_re9.tdf Line: 25
-Info (12128): Elaborating entity "dffpipe_re9" for hierarchy "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|alt_synch_pipe_apl:rs_dgwp|dffpipe_re9:dffpipe14" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/alt_synch_pipe_apl.tdf Line: 35
+    Info (12023): Found entity 1: dffpipe_re9 File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/dffpipe_re9.tdf Line: 25
+Info (12128): Elaborating entity "dffpipe_re9" for hierarchy "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|alt_synch_pipe_apl:rs_dgwp|dffpipe_re9:dffpipe14" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/alt_synch_pipe_apl.tdf Line: 35
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_synch_pipe_bpl.tdf
-    Info (12023): Found entity 1: alt_synch_pipe_bpl File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/alt_synch_pipe_bpl.tdf Line: 27
-Info (12128): Elaborating entity "alt_synch_pipe_bpl" for hierarchy "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|alt_synch_pipe_bpl:ws_dgrp" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/dcfifo_82q1.tdf Line: 64
+    Info (12023): Found entity 1: alt_synch_pipe_bpl File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/alt_synch_pipe_bpl.tdf Line: 27
+Info (12128): Elaborating entity "alt_synch_pipe_bpl" for hierarchy "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|alt_synch_pipe_bpl:ws_dgrp" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/dcfifo_82q1.tdf Line: 64
 Info (12021): Found 1 design units, including 1 entities, in source file db/dffpipe_se9.tdf
-    Info (12023): Found entity 1: dffpipe_se9 File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/dffpipe_se9.tdf Line: 25
-Info (12128): Elaborating entity "dffpipe_se9" for hierarchy "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|alt_synch_pipe_bpl:ws_dgrp|dffpipe_se9:dffpipe17" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/alt_synch_pipe_bpl.tdf Line: 35
+    Info (12023): Found entity 1: dffpipe_se9 File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/dffpipe_se9.tdf Line: 25
+Info (12128): Elaborating entity "dffpipe_se9" for hierarchy "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|alt_synch_pipe_bpl:ws_dgrp|dffpipe_se9:dffpipe17" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/alt_synch_pipe_bpl.tdf Line: 35
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_b06.tdf
-    Info (12023): Found entity 1: cmpr_b06 File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/cmpr_b06.tdf Line: 23
-Info (12128): Elaborating entity "cmpr_b06" for hierarchy "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|cmpr_b06:rdempty_eq_comp" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/dcfifo_82q1.tdf Line: 65
-Info (12128): Elaborating entity "mac_tx" for hierarchy "mac_wrapper:mac_wrapper|mac_tx:mac_tx" File: D:/FPGAHackathon/hackathon_base-master/src/mac_wrapper.sv Line: 106
-Warning (10036): Verilog HDL or VHDL warning at mac_tx.sv(70): object "bdata" assigned a value but never read File: D:/FPGAHackathon/hackathon_base-master/src/mac_tx.sv Line: 70
-Warning (10036): Verilog HDL or VHDL warning at mac_tx.sv(72): object "bcrc" assigned a value but never read File: D:/FPGAHackathon/hackathon_base-master/src/mac_tx.sv Line: 72
-Warning (10036): Verilog HDL or VHDL warning at mac_tx.sv(74): object "p_bits" assigned a value but never read File: D:/FPGAHackathon/hackathon_base-master/src/mac_tx.sv Line: 74
-Warning (10230): Verilog HDL assignment warning at mac_tx.sv(48): truncated value with size 32 to match size of target (1) File: D:/FPGAHackathon/hackathon_base-master/src/mac_tx.sv Line: 48
-Warning (10230): Verilog HDL assignment warning at mac_tx.sv(129): truncated value with size 32 to match size of target (1) File: D:/FPGAHackathon/hackathon_base-master/src/mac_tx.sv Line: 129
-Warning (10230): Verilog HDL assignment warning at mac_tx.sv(130): truncated value with size 32 to match size of target (1) File: D:/FPGAHackathon/hackathon_base-master/src/mac_tx.sv Line: 130
-Warning (10230): Verilog HDL assignment warning at mac_tx.sv(134): truncated value with size 32 to match size of target (4) File: D:/FPGAHackathon/hackathon_base-master/src/mac_tx.sv Line: 134
-Warning (10230): Verilog HDL assignment warning at mac_tx.sv(169): truncated value with size 32 to match size of target (11) File: D:/FPGAHackathon/hackathon_base-master/src/mac_tx.sv Line: 169
-Warning (10230): Verilog HDL assignment warning at mac_tx.sv(178): truncated value with size 32 to match size of target (4) File: D:/FPGAHackathon/hackathon_base-master/src/mac_tx.sv Line: 178
-Warning (10230): Verilog HDL assignment warning at mac_tx.sv(220): truncated value with size 2 to match size of target (1) File: D:/FPGAHackathon/hackathon_base-master/src/mac_tx.sv Line: 220
+    Info (12023): Found entity 1: cmpr_b06 File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/cmpr_b06.tdf Line: 23
+Info (12128): Elaborating entity "cmpr_b06" for hierarchy "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|cmpr_b06:rdempty_eq_comp" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/dcfifo_82q1.tdf Line: 65
+Info (12128): Elaborating entity "mac_tx" for hierarchy "mac_wrapper:mac_wrapper|mac_tx:mac_tx" File: D:/FPGAHackathon/nokia_fpga/src/mac_wrapper.sv Line: 106
+Warning (10036): Verilog HDL or VHDL warning at mac_tx.sv(70): object "bdata" assigned a value but never read File: D:/FPGAHackathon/nokia_fpga/src/mac_tx.sv Line: 70
+Warning (10036): Verilog HDL or VHDL warning at mac_tx.sv(72): object "bcrc" assigned a value but never read File: D:/FPGAHackathon/nokia_fpga/src/mac_tx.sv Line: 72
+Warning (10036): Verilog HDL or VHDL warning at mac_tx.sv(74): object "p_bits" assigned a value but never read File: D:/FPGAHackathon/nokia_fpga/src/mac_tx.sv Line: 74
+Warning (10230): Verilog HDL assignment warning at mac_tx.sv(48): truncated value with size 32 to match size of target (1) File: D:/FPGAHackathon/nokia_fpga/src/mac_tx.sv Line: 48
+Warning (10230): Verilog HDL assignment warning at mac_tx.sv(129): truncated value with size 32 to match size of target (1) File: D:/FPGAHackathon/nokia_fpga/src/mac_tx.sv Line: 129
+Warning (10230): Verilog HDL assignment warning at mac_tx.sv(130): truncated value with size 32 to match size of target (1) File: D:/FPGAHackathon/nokia_fpga/src/mac_tx.sv Line: 130
+Warning (10230): Verilog HDL assignment warning at mac_tx.sv(134): truncated value with size 32 to match size of target (4) File: D:/FPGAHackathon/nokia_fpga/src/mac_tx.sv Line: 134
+Warning (10230): Verilog HDL assignment warning at mac_tx.sv(169): truncated value with size 32 to match size of target (11) File: D:/FPGAHackathon/nokia_fpga/src/mac_tx.sv Line: 169
+Warning (10230): Verilog HDL assignment warning at mac_tx.sv(178): truncated value with size 32 to match size of target (4) File: D:/FPGAHackathon/nokia_fpga/src/mac_tx.sv Line: 178
+Warning (10230): Verilog HDL assignment warning at mac_tx.sv(220): truncated value with size 2 to match size of target (1) File: D:/FPGAHackathon/nokia_fpga/src/mac_tx.sv Line: 220
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "i_dst_mac" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "header.src_mac" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "header.dst_mac" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "i_dst_mac" into its bus
-Info (12128): Elaborating entity "crc" for hierarchy "mac_wrapper:mac_wrapper|mac_tx:mac_tx|crc:add_crc" File: D:/FPGAHackathon/hackathon_base-master/src/mac_tx.sv Line: 194
-Info (12128): Elaborating entity "control" for hierarchy "control:main" File: D:/FPGAHackathon/hackathon_base-master/src/top.v Line: 123
-Info (12128): Elaborating entity "task_manager" for hierarchy "control:main|task_manager:task_manager" File: D:/FPGAHackathon/hackathon_base-master/src/control.v Line: 53
-Info (12128): Elaborating entity "mhp" for hierarchy "control:main|task_manager:task_manager|mhp:protocol" File: D:/FPGAHackathon/hackathon_base-master/src/task_manager.v Line: 70
-Info (12128): Elaborating entity "debug_port" for hierarchy "control:main|debug_port:debug_port" File: D:/FPGAHackathon/hackathon_base-master/src/control.v Line: 71
-Warning (10034): Output port "o_rreq" at debug_port.v(15) has no driver File: D:/FPGAHackathon/hackathon_base-master/src/debug_port.v Line: 15
+Info (12128): Elaborating entity "crc" for hierarchy "mac_wrapper:mac_wrapper|mac_tx:mac_tx|crc:add_crc" File: D:/FPGAHackathon/nokia_fpga/src/mac_tx.sv Line: 194
+Info (12128): Elaborating entity "control" for hierarchy "control:main" File: D:/FPGAHackathon/nokia_fpga/src/top.v Line: 123
+Warning (10230): Verilog HDL assignment warning at control.v(31): truncated value with size 32 to match size of target (23) File: D:/FPGAHackathon/nokia_fpga/src/control.v Line: 31
+Info (12128): Elaborating entity "task_manager" for hierarchy "control:main|task_manager:task_manager" File: D:/FPGAHackathon/nokia_fpga/src/control.v Line: 54
+Info (12128): Elaborating entity "mhp" for hierarchy "control:main|task_manager:task_manager|mhp:protocol" File: D:/FPGAHackathon/nokia_fpga/src/task_manager.v Line: 70
+Info (12128): Elaborating entity "debug_port" for hierarchy "control:main|debug_port:debug_port" File: D:/FPGAHackathon/nokia_fpga/src/control.v Line: 72
+Warning (10034): Output port "o_rreq" at debug_port.v(15) has no driver File: D:/FPGAHackathon/nokia_fpga/src/debug_port.v Line: 15
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|altsyncram_s5d1:fifo_ram|q_b[0]" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/altsyncram_s5d1.tdf Line: 42
-        Warning (14320): Synthesized away node "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|altsyncram_s5d1:fifo_ram|q_b[1]" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/altsyncram_s5d1.tdf Line: 74
-        Warning (14320): Synthesized away node "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|altsyncram_s5d1:fifo_ram|q_b[2]" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/altsyncram_s5d1.tdf Line: 106
-        Warning (14320): Synthesized away node "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|altsyncram_s5d1:fifo_ram|q_b[3]" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/altsyncram_s5d1.tdf Line: 138
-        Warning (14320): Synthesized away node "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|altsyncram_s5d1:fifo_ram|q_b[4]" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/altsyncram_s5d1.tdf Line: 170
-        Warning (14320): Synthesized away node "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|altsyncram_s5d1:fifo_ram|q_b[5]" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/altsyncram_s5d1.tdf Line: 202
-        Warning (14320): Synthesized away node "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|altsyncram_s5d1:fifo_ram|q_b[6]" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/altsyncram_s5d1.tdf Line: 234
-        Warning (14320): Synthesized away node "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|altsyncram_s5d1:fifo_ram|q_b[7]" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/altsyncram_s5d1.tdf Line: 266
-        Warning (14320): Synthesized away node "uart_wrapper:uart_wrapper|uart_fifo:rx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|altsyncram_nhn1:FIFOram|q_b[0]" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/altsyncram_nhn1.tdf Line: 40
-        Warning (14320): Synthesized away node "uart_wrapper:uart_wrapper|uart_fifo:rx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|altsyncram_nhn1:FIFOram|q_b[1]" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/altsyncram_nhn1.tdf Line: 72
-        Warning (14320): Synthesized away node "uart_wrapper:uart_wrapper|uart_fifo:rx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|altsyncram_nhn1:FIFOram|q_b[2]" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/altsyncram_nhn1.tdf Line: 104
-        Warning (14320): Synthesized away node "uart_wrapper:uart_wrapper|uart_fifo:rx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|altsyncram_nhn1:FIFOram|q_b[3]" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/altsyncram_nhn1.tdf Line: 136
-        Warning (14320): Synthesized away node "uart_wrapper:uart_wrapper|uart_fifo:rx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|altsyncram_nhn1:FIFOram|q_b[4]" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/altsyncram_nhn1.tdf Line: 168
-        Warning (14320): Synthesized away node "uart_wrapper:uart_wrapper|uart_fifo:rx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|altsyncram_nhn1:FIFOram|q_b[5]" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/altsyncram_nhn1.tdf Line: 200
-        Warning (14320): Synthesized away node "uart_wrapper:uart_wrapper|uart_fifo:rx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|altsyncram_nhn1:FIFOram|q_b[6]" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/altsyncram_nhn1.tdf Line: 232
-        Warning (14320): Synthesized away node "uart_wrapper:uart_wrapper|uart_fifo:rx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|altsyncram_nhn1:FIFOram|q_b[7]" File: D:/FPGAHackathon/hackathon_base-master/quartus_project/db/altsyncram_nhn1.tdf Line: 264
+        Warning (14320): Synthesized away node "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|altsyncram_s5d1:fifo_ram|q_b[0]" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/altsyncram_s5d1.tdf Line: 42
+        Warning (14320): Synthesized away node "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|altsyncram_s5d1:fifo_ram|q_b[1]" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/altsyncram_s5d1.tdf Line: 74
+        Warning (14320): Synthesized away node "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|altsyncram_s5d1:fifo_ram|q_b[2]" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/altsyncram_s5d1.tdf Line: 106
+        Warning (14320): Synthesized away node "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|altsyncram_s5d1:fifo_ram|q_b[3]" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/altsyncram_s5d1.tdf Line: 138
+        Warning (14320): Synthesized away node "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|altsyncram_s5d1:fifo_ram|q_b[4]" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/altsyncram_s5d1.tdf Line: 170
+        Warning (14320): Synthesized away node "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|altsyncram_s5d1:fifo_ram|q_b[5]" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/altsyncram_s5d1.tdf Line: 202
+        Warning (14320): Synthesized away node "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|altsyncram_s5d1:fifo_ram|q_b[6]" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/altsyncram_s5d1.tdf Line: 234
+        Warning (14320): Synthesized away node "mac_wrapper:mac_wrapper|eth_fifo:rx_fifo|dcfifo:dcfifo8bx2048|dcfifo_82q1:auto_generated|altsyncram_s5d1:fifo_ram|q_b[7]" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/altsyncram_s5d1.tdf Line: 266
+        Warning (14320): Synthesized away node "uart_wrapper:uart_wrapper|uart_fifo:rx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|altsyncram_nhn1:FIFOram|q_b[0]" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/altsyncram_nhn1.tdf Line: 40
+        Warning (14320): Synthesized away node "uart_wrapper:uart_wrapper|uart_fifo:rx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|altsyncram_nhn1:FIFOram|q_b[1]" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/altsyncram_nhn1.tdf Line: 72
+        Warning (14320): Synthesized away node "uart_wrapper:uart_wrapper|uart_fifo:rx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|altsyncram_nhn1:FIFOram|q_b[2]" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/altsyncram_nhn1.tdf Line: 104
+        Warning (14320): Synthesized away node "uart_wrapper:uart_wrapper|uart_fifo:rx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|altsyncram_nhn1:FIFOram|q_b[3]" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/altsyncram_nhn1.tdf Line: 136
+        Warning (14320): Synthesized away node "uart_wrapper:uart_wrapper|uart_fifo:rx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|altsyncram_nhn1:FIFOram|q_b[4]" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/altsyncram_nhn1.tdf Line: 168
+        Warning (14320): Synthesized away node "uart_wrapper:uart_wrapper|uart_fifo:rx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|altsyncram_nhn1:FIFOram|q_b[5]" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/altsyncram_nhn1.tdf Line: 200
+        Warning (14320): Synthesized away node "uart_wrapper:uart_wrapper|uart_fifo:rx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|altsyncram_nhn1:FIFOram|q_b[6]" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/altsyncram_nhn1.tdf Line: 232
+        Warning (14320): Synthesized away node "uart_wrapper:uart_wrapper|uart_fifo:rx_fifo|scfifo:scfifo8bx256|scfifo_s0b1:auto_generated|a_dpfifo_foa1:dpfifo|altsyncram_nhn1:FIFOram|q_b[7]" File: D:/FPGAHackathon/nokia_fpga/quartus_project/db/altsyncram_nhn1.tdf Line: 264
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 117 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file D:/FPGAHackathon/hackathon_base-master/quartus_project/output_files/hackathon.map.smsg
+Info (144001): Generated suppressed messages file D:/FPGAHackathon/nokia_fpga/quartus_project/output_files/hackathon.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "UART_RX" File: D:/FPGAHackathon/hackathon_base-master/src/top.v Line: 17
-Info (21057): Implemented 781 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "UART_RX" File: D:/FPGAHackathon/nokia_fpga/src/top.v Line: 17
+Info (21057): Implemented 810 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 755 logic cells
+    Info (21061): Implemented 784 logic cells
     Info (21064): Implemented 16 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 35 warnings
-    Info: Peak virtual memory: 672 megabytes
-    Info: Processing ended: Sat Nov 26 16:09:31 2022
-    Info: Elapsed time: 00:00:28
-    Info: Total CPU time (on all processors): 00:00:35
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 36 warnings
+    Info: Peak virtual memory: 692 megabytes
+    Info: Processing ended: Sat Nov 26 16:45:06 2022
+    Info: Elapsed time: 00:00:32
+    Info: Total CPU time (on all processors): 00:00:36
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in D:/FPGAHackathon/hackathon_base-master/quartus_project/output_files/hackathon.map.smsg.
+The suppressed messages can be found in D:/FPGAHackathon/nokia_fpga/quartus_project/output_files/hackathon.map.smsg.
 
 

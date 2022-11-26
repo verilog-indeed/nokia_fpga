@@ -25,10 +25,11 @@ module control(
 reg[7:0] uartTxByte;
 reg uartTxRdy;
 
-
+reg[22:0] uartDelayCounter;
 always@(posedge i_clk) begin
 	if (!i_rst) begin
-		if (i_uart_wready) begin
+		uartDelayCounter <= uartDelayCounter + 1;
+		if (!uartDelayCounter && i_uart_wready) begin
 			uartTxByte <= 8'hA5;
 			uartTxRdy <= 1;
 		end else begin

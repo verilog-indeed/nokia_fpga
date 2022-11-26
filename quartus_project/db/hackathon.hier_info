@@ -1,13 +1,13 @@
 |top
 CLK_50 => clk.IN5
 L1_OSC => clk_phy.IN2
-L1_TX0 << mac_wrapper:mac_wrapper.o_l1_txd
-L1_TX1 << mac_wrapper:mac_wrapper.o_l1_txd
-L1_TX_EN << mac_wrapper:mac_wrapper.o_l1_txen
+L1_TX0 <= mac_wrapper:mac_wrapper.o_l1_txd
+L1_TX1 <= mac_wrapper:mac_wrapper.o_l1_txd
+L1_TX_EN <= mac_wrapper:mac_wrapper.o_l1_txen
 L1_RX0 => L1_RX0.IN1
 L1_RX1 => L1_RX1.IN1
 L1_CRS_DV => L1_CRS_DV.IN1
-UART_TX << uart_wrapper:uart_wrapper.o_tx
+UART_TX <= uart_wrapper:uart_wrapper.o_tx
 UART_RX => UART_RX.IN1
 
 
@@ -3118,15 +3118,7 @@ o_uart_wdata[4] <= debug_port:debug_port.o_wdata
 o_uart_wdata[5] <= debug_port:debug_port.o_wdata
 o_uart_wdata[6] <= debug_port:debug_port.o_wdata
 o_uart_wdata[7] <= debug_port:debug_port.o_wdata
-i_uart_wready => uartTxByte.OUTPUTSELECT
-i_uart_wready => uartTxByte.OUTPUTSELECT
-i_uart_wready => uartTxByte.OUTPUTSELECT
-i_uart_wready => uartTxByte.OUTPUTSELECT
-i_uart_wready => uartTxByte.OUTPUTSELECT
-i_uart_wready => uartTxByte.OUTPUTSELECT
-i_uart_wready => uartTxByte.OUTPUTSELECT
-i_uart_wready => uartTxByte.OUTPUTSELECT
-i_uart_wready => uartTxRdy.DATAB
+i_uart_wready => always0.IN1
 o_uart_wvalid <= debug_port:debug_port.o_wvalid
 
 

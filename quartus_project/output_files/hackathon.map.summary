@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sat Nov 26 16:09:31 2022
+Analysis & Synthesis Status : Successful - Sat Nov 26 16:45:06 2022
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : hackathon
 Top-level Entity Name : top
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 586
+Total registers : 609
 Total pins : 10
 Total virtual pins : 0
 Total block memory bits : 18,432
