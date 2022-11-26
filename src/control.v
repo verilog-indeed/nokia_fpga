@@ -30,7 +30,7 @@ always@(posedge i_clk) begin
 	if (!i_rst) begin
 		uartDelayCounter <= uartDelayCounter + 1;
 		if (!uartDelayCounter && i_uart_wready) begin
-			uartTxByte <= 8'hA5;
+			uartTxByte <= 8'h65;
 			uartTxRdy <= 1;
 		end else begin
 			uartTxRdy <= 0;
