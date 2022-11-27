@@ -43,35 +43,28 @@ always @(posedge i_clk) begin
 		state <= IDLE;
 	end else begin
 		case (state)
-			IDLE: begin
-				addrGrantStrobe <= 0;
-				link  <= 0;
-				send  <= 0;
-				mhpEnable <= 0;
-				if (i_taskStart) begin
-					link  <= 1;
-					currentTask <= i_taskNbr;
-					mhpEnable <= 1;
-					send  <=  1;
-					state <= CONNECTED;
-				end
-			end
-			CONNECTED: begin
-				if (done) begin
-					send <= 0;
-					state <= LINKED;
-				end
-			end
-			LINKED: begin
-				if (i_dType == 8'h04) begin
-					mhpEnable <= 0;
-					o_destAddr <= i_dstAddr;
-					o_srcAddr <= i_srcAddr;
-					addrGrantStrobe <= 1;
-					state <= IDLE;
-				end
-			end
-		endcase
+      IDLE: begin
+        link <= 0;
+        if (done) begin
+          send  <=  1;
+          state <= CONNECTED;
+        end
+      end
+      CONNECTED: begin
+        if (done)
+          state <= LINKED;
+        else
+          send  <=  0;
+      end
+      LINKED: begin
+        if (done) begin
+          link  <= 0;
+          send  <= 1;
+          state <= CONNECTED;
+        end else
+          link <= 0; // change to 1 to enable MHP protocol ethertype usage
+      end
+    endcase
 	end
   
   
