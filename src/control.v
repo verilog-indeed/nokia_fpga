@@ -30,6 +30,7 @@ reg[3:0] uartPrintCycle;
 
 wire[15:0] desty;
 wire[15:0] saucy;
+wire addrGranted;
 
 always@(posedge i_clk) begin
 	if (!i_rst) begin
@@ -82,7 +83,7 @@ always@(posedge i_clk) begin
 	end
 end
 
-wire addrGranted;
+
 
 task_manager task_manager(
   //  sys

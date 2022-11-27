@@ -241,7 +241,7 @@ always @(posedge i_clk) begin
           r_req   <= 0;
       end
       READ: begin
-        if (i_rready)
+        if (i_rready && i_enable)
 				case (mhpState)
 					DST_PHASE: begin
 					  doubleCycleCount <= 1;
@@ -309,8 +309,8 @@ always @(posedge i_clk) begin
         end
       end
       WRITE: begin    //  write data
-        if (i_wready) begin
-          w_valid <= 1;
+			w_valid <= 1;
+        if (i_wready && i_enable) begin
 			 case (mhpState)
 					DST_PHASE: begin
 					//TODO: temporary hack to get past MHP address
@@ -374,7 +374,9 @@ always @(posedge i_clk) begin
 					end
 				endcase
           //state   <=  IDLE;
-        end
+        end else begin
+				state   <= IDLE;
+		  end
       end
     endcase
   end

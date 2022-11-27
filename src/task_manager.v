@@ -62,7 +62,7 @@ always @(posedge i_clk) begin
           send  <= 1;
           state <= CONNECTED;
         end else
-          link <= 0; // change to 1 to enable MHP protocol ethertype usage
+          link <= 1; // change to 1 to enable MHP protocol ethertype usage
       end
     endcase
 	end
@@ -129,7 +129,7 @@ mhp protocol(
   .i_rst    (i_rst),
   //  ctrl
   .i_send   (send),
-  .i_enable	(mhpEnable),
+  .i_enable	(link),
   .o_done   (done),
   //  user data
   .i_dst  ({16'hFFFF}),//not needed, destination will always be host?

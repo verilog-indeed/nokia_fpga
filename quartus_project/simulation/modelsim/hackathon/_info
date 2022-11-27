@@ -11,7 +11,7 @@ cModel Technology
 Z0 dD:/FPGAHackathon/nokia_fpga/quartus_project/simulation/modelsim
 vcdc_pipeline
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1669475719
+Z2 !s110 1669535152
 !i10b 1
 !s100 <<`]1`l9?@RFKM^6gn^1E3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -22,13 +22,13 @@ R0
 Z5 w1669456800
 8D:/FPGAHackathon/nokia_fpga/src/cdc_pipeline.sv
 FD:/FPGAHackathon/nokia_fpga/src/cdc_pipeline.sv
-!i122 7
+!i122 27
 L0 3 22
 Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1669475719.000000
+Z7 !s108 1669535152.000000
 !s107 D:/FPGAHackathon/nokia_fpga/src/cdc_pipeline.sv|
 !s90 -reportprogress|300|-sv|-work|hackathon|+incdir+D:/FPGAHackathon/nokia_fpga/src|D:/FPGAHackathon/nokia_fpga/src/cdc_pipeline.sv|
 !i113 1
@@ -36,28 +36,28 @@ Z8 o-sv -work hackathon
 Z9 !s92 -sv -work hackathon +incdir+D:/FPGAHackathon/nokia_fpga/src
 Z10 tCvgOpt 0
 vcontrol
-Z11 !s110 1669475718
+R2
 !i10b 1
-!s100 A9:]cFVoUMO2?bl?R05ke1
+!s100 ]3^0W]OgdDEZZGLkJDLHo2
 R3
-I?m^4X^7LYCOmS5TP@=9233
+IgSnEUnh_QjK3_MEcnYZHm1
 R4
 R0
-w1669475150
+w1669535141
 8D:/FPGAHackathon/nokia_fpga/src/control.v
 FD:/FPGAHackathon/nokia_fpga/src/control.v
-!i122 3
-L0 3 71
+!i122 23
+Z11 L0 3 123
 R6
 r1
 !s85 0
 31
-Z12 !s108 1669475718.000000
+R7
 !s107 D:/FPGAHackathon/nokia_fpga/src/control.v|
 !s90 -reportprogress|300|-vlog01compat|-work|hackathon|+incdir+D:/FPGAHackathon/nokia_fpga/src|D:/FPGAHackathon/nokia_fpga/src/control.v|
 !i113 1
-Z13 o-vlog01compat -work hackathon
-Z14 !s92 -vlog01compat -work hackathon +incdir+D:/FPGAHackathon/nokia_fpga/src
+Z12 o-vlog01compat -work hackathon
+Z13 !s92 -vlog01compat -work hackathon +incdir+D:/FPGAHackathon/nokia_fpga/src
 R10
 vcrc
 R1
@@ -72,7 +72,7 @@ R0
 R5
 8D:/FPGAHackathon/nokia_fpga/src/crc.sv
 FD:/FPGAHackathon/nokia_fpga/src/crc.sv
-!i122 8
+!i122 28
 L0 3 86
 R6
 r1
@@ -86,7 +86,7 @@ R8
 R9
 R10
 vdebug_port
-R11
+R2
 !i10b 1
 !s100 L`>Pz>_4blzPNURo7Cmlk2
 R3
@@ -96,21 +96,21 @@ R0
 w1669475340
 8D:/FPGAHackathon/nokia_fpga/src/debug_port.v
 FD:/FPGAHackathon/nokia_fpga/src/debug_port.v
-!i122 4
+!i122 24
 L0 3 79
 R6
 r1
 !s85 0
 31
-R12
+R7
 !s107 D:/FPGAHackathon/nokia_fpga/src/debug_port.v|
 !s90 -reportprogress|300|-vlog01compat|-work|hackathon|+incdir+D:/FPGAHackathon/nokia_fpga/src|D:/FPGAHackathon/nokia_fpga/src/debug_port.v|
 !i113 1
+R12
 R13
-R14
 R10
 veth_fifo
-R11
+R2
 !i10b 1
 !s100 D36SGZ2Y;Goc5FEgzEkUS2
 R3
@@ -120,18 +120,18 @@ R0
 R5
 8D:/FPGAHackathon/nokia_fpga/src/eth_fifo.v
 FD:/FPGAHackathon/nokia_fpga/src/eth_fifo.v
-!i122 1
+!i122 21
 L0 3 47
 R6
 r1
 !s85 0
 31
-R12
+Z14 !s108 1669535151.000000
 !s107 D:/FPGAHackathon/nokia_fpga/src/eth_fifo.v|
 !s90 -reportprogress|300|-vlog01compat|-work|hackathon|+incdir+D:/FPGAHackathon/nokia_fpga/src|D:/FPGAHackathon/nokia_fpga/src/eth_fifo.v|
 !i113 1
+R12
 R13
-R14
 R10
 vmac_rx
 R1
@@ -146,7 +146,7 @@ R0
 R5
 8D:/FPGAHackathon/nokia_fpga/src/mac_rx.sv
 FD:/FPGAHackathon/nokia_fpga/src/mac_rx.sv
-!i122 9
+!i122 29
 L0 3 117
 R6
 r1
@@ -172,7 +172,7 @@ R0
 R5
 8D:/FPGAHackathon/nokia_fpga/src/mac_tx.sv
 FD:/FPGAHackathon/nokia_fpga/src/mac_tx.sv
-!i122 10
+!i122 30
 L0 3 220
 R6
 r1
@@ -187,7 +187,7 @@ R9
 R10
 vmac_wrapper
 R1
-R2
+Z15 !s110 1669535153
 !i10b 1
 !s100 3edNYX?Ljb@o^0WHD8[a82
 R3
@@ -198,7 +198,7 @@ R0
 R5
 8D:/FPGAHackathon/nokia_fpga/src/mac_wrapper.sv
 FD:/FPGAHackathon/nokia_fpga/src/mac_wrapper.sv
-!i122 11
+!i122 31
 L0 3 109
 R6
 r1
@@ -212,32 +212,32 @@ R8
 R9
 R10
 vmhp
-R11
+R2
 !i10b 1
-!s100 dUS>007MLl`3kFfMUmXNL3
+!s100 BeoPM?fmF7VNOQGk6N6Jb3
 R3
-IfLgQWK=28cJP33lj6E=?B1
+IRg6?O^ojN8AE]o;^[?d_D3
 R4
 R0
-R5
+w1669534108
 8D:/FPGAHackathon/nokia_fpga/src/mhp.v
 FD:/FPGAHackathon/nokia_fpga/src/mhp.v
-!i122 5
-L0 3 72
+!i122 25
+L0 3 392
 R6
 r1
 !s85 0
 31
-R12
+R7
 !s107 D:/FPGAHackathon/nokia_fpga/src/mhp.v|
 !s90 -reportprogress|300|-vlog01compat|-work|hackathon|+incdir+D:/FPGAHackathon/nokia_fpga/src|D:/FPGAHackathon/nokia_fpga/src/mhp.v|
 !i113 1
+R12
 R13
-R14
 R10
 vreset_release
 R1
-R2
+R15
 !i10b 1
 !s100 LKE<_f^DR2TIGSTma_]OB2
 R3
@@ -248,13 +248,13 @@ R0
 R5
 8D:/FPGAHackathon/nokia_fpga/src/reset_release.sv
 FD:/FPGAHackathon/nokia_fpga/src/reset_release.sv
-!i122 12
+!i122 32
 L0 3 20
 R6
 r1
 !s85 0
 31
-R7
+Z16 !s108 1669535153.000000
 !s107 D:/FPGAHackathon/nokia_fpga/src/reset_release.sv|
 !s90 -reportprogress|300|-sv|-work|hackathon|+incdir+D:/FPGAHackathon/nokia_fpga/src|D:/FPGAHackathon/nokia_fpga/src/reset_release.sv|
 !i113 1
@@ -264,29 +264,29 @@ R10
 vtask_manager
 R2
 !i10b 1
-!s100 G^T877NF;i9znLDGaLO:Q3
+!s100 LB1Gh<Oo1zP`?3f7:FPV02
 R3
-ImOO<Th?ob8j?Y3OdCz4W=2
+IQUVeidb_Pg8U==R?6XkFE0
 R4
 R0
-R5
+w1669530724
 8D:/FPGAHackathon/nokia_fpga/src/task_manager.v
 FD:/FPGAHackathon/nokia_fpga/src/task_manager.v
-!i122 6
-L0 1 74
+!i122 26
+L0 1 154
 R6
 r1
 !s85 0
 31
-R12
+R7
 !s107 D:/FPGAHackathon/nokia_fpga/src/task_manager.v|
 !s90 -reportprogress|300|-vlog01compat|-work|hackathon|+incdir+D:/FPGAHackathon/nokia_fpga/src|D:/FPGAHackathon/nokia_fpga/src/task_manager.v|
 !i113 1
+R12
 R13
-R14
 R10
 vtop
-!s110 1669475717
+!s110 1669535151
 !i10b 1
 !s100 mg78Yf9_MQzVh;7_3hM713
 R3
@@ -296,22 +296,22 @@ R0
 w1669464345
 8D:/FPGAHackathon/nokia_fpga/src/top.v
 FD:/FPGAHackathon/nokia_fpga/src/top.v
-!i122 0
-L0 3 123
+!i122 20
+R11
 R6
 r1
 !s85 0
 31
-!s108 1669475717.000000
+R14
 !s107 D:/FPGAHackathon/nokia_fpga/src/top.v|
 !s90 -reportprogress|300|-vlog01compat|-work|hackathon|+incdir+D:/FPGAHackathon/nokia_fpga/src|D:/FPGAHackathon/nokia_fpga/src/top.v|
 !i113 1
+R12
 R13
-R14
 R10
 vuart_counter
 R1
-R2
+R15
 !i10b 1
 !s100 2nfRb5<?ZgOedI10I<k;W3
 R3
@@ -322,13 +322,13 @@ R0
 R5
 8D:/FPGAHackathon/nokia_fpga/src/uart_counter.sv
 FD:/FPGAHackathon/nokia_fpga/src/uart_counter.sv
-!i122 13
+!i122 33
 L0 3 36
 R6
 r1
 !s85 0
 31
-R7
+R16
 !s107 D:/FPGAHackathon/nokia_fpga/src/uart_counter.sv|
 !s90 -reportprogress|300|-sv|-work|hackathon|+incdir+D:/FPGAHackathon/nokia_fpga/src|D:/FPGAHackathon/nokia_fpga/src/uart_counter.sv|
 !i113 1
@@ -336,7 +336,7 @@ R8
 R9
 R10
 vuart_fifo
-R11
+R2
 !i10b 1
 !s100 Y9@gW80``SMIzQJWmi8`Z1
 R3
@@ -346,22 +346,22 @@ R0
 R5
 8D:/FPGAHackathon/nokia_fpga/src/uart_fifo.v
 FD:/FPGAHackathon/nokia_fpga/src/uart_fifo.v
-!i122 2
+!i122 22
 L0 3 42
 R6
 r1
 !s85 0
 31
-R12
+R7
 !s107 D:/FPGAHackathon/nokia_fpga/src/uart_fifo.v|
 !s90 -reportprogress|300|-vlog01compat|-work|hackathon|+incdir+D:/FPGAHackathon/nokia_fpga/src|D:/FPGAHackathon/nokia_fpga/src/uart_fifo.v|
 !i113 1
+R12
 R13
-R14
 R10
 vuart_rx
 R1
-R2
+R15
 !i10b 1
 !s100 0dETdj:V_OP7`c]iNT2Hl0
 R3
@@ -372,13 +372,13 @@ R0
 R5
 8D:/FPGAHackathon/nokia_fpga/src/uart_rx.sv
 FD:/FPGAHackathon/nokia_fpga/src/uart_rx.sv
-!i122 14
+!i122 34
 L0 3 92
 R6
 r1
 !s85 0
 31
-R7
+R16
 !s107 D:/FPGAHackathon/nokia_fpga/src/uart_rx.sv|
 !s90 -reportprogress|300|-sv|-work|hackathon|+incdir+D:/FPGAHackathon/nokia_fpga/src|D:/FPGAHackathon/nokia_fpga/src/uart_rx.sv|
 !i113 1
@@ -387,7 +387,7 @@ R9
 R10
 vuart_tx
 R1
-Z15 !s110 1669475720
+R15
 !i10b 1
 !s100 Hbk9Nn@HPRPlW@8^FNn^g1
 R3
@@ -398,13 +398,13 @@ R0
 R5
 8D:/FPGAHackathon/nokia_fpga/src/uart_tx.sv
 FD:/FPGAHackathon/nokia_fpga/src/uart_tx.sv
-!i122 15
+!i122 35
 L0 3 84
 R6
 r1
 !s85 0
 31
-R7
+R16
 !s107 D:/FPGAHackathon/nokia_fpga/src/uart_tx.sv|
 !s90 -reportprogress|300|-sv|-work|hackathon|+incdir+D:/FPGAHackathon/nokia_fpga/src|D:/FPGAHackathon/nokia_fpga/src/uart_tx.sv|
 !i113 1
@@ -424,13 +424,13 @@ R0
 R5
 8D:/FPGAHackathon/nokia_fpga/src/uart_wrapper.sv
 FD:/FPGAHackathon/nokia_fpga/src/uart_wrapper.sv
-!i122 16
+!i122 36
 L0 1 98
 R6
 r1
 !s85 0
 31
-!s108 1669475720.000000
+R16
 !s107 D:/FPGAHackathon/nokia_fpga/src/uart_wrapper.sv|
 !s90 -reportprogress|300|-sv|-work|hackathon|+incdir+D:/FPGAHackathon/nokia_fpga/src|D:/FPGAHackathon/nokia_fpga/src/uart_wrapper.sv|
 !i113 1
