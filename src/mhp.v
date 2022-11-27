@@ -26,19 +26,19 @@ module mhp(
 );
 
 //  fsm
-/*reg   [1:0] state       = 0;
+reg   [1:0] state       = 0;
 localparam  IDLE        = 0;
 localparam  READ        = 1;
-localparam  WRITE       = 2;*/
+localparam  WRITE       = 2;
 
-reg [3:0] state = 0;
-localparam IDLE = 0;
-localparam DST_PHASE = 1;
-localparam SRC_PHASE = 2;
-localparam SIZE_PHASE = 3;
-localparam DTYPE_PHASE = 4;
-localparam PAYLOAD_PHASE = 5;
-localparam SCS_PHASE = 6;
+
+reg [2:0] mhpState = 0;
+localparam DST_PHASE = 0;
+localparam SRC_PHASE = 1;
+localparam SIZE_PHASE = 2;
+localparam DTYPE_PHASE = 3;
+localparam PAYLOAD_PHASE = 4;
+localparam SCS_PHASE = 5;
 
  
 
@@ -56,7 +56,7 @@ reg [15:0] payloadSize;
 reg [15:0] destMhpAddr;
 reg [15:0] srcMhpAddr;
 reg [15:0] srsChkSum;
-reg [6:0] mhpType;
+reg [7:0] mhpType;
 reg dataDir;
 
 reg[15:0] dst;
@@ -64,19 +64,22 @@ reg[15:0] src;
 reg[15:0] size;
 reg[7:0]	dtype;
 
-reg addrCycleCount = 0;
+reg doubleCycleCount = 0;
 
 always @(posedge i_clk) begin
-	if (i_rst || !i_enable) begin
+	//if (i_rst || !i_enable) begin
+	if (i_rst) begin
+
 		done    <= 0;
 		w_data  <= 0;
 		w_valid <= 0;
 		r_req   <= 0; 
 		state   <= IDLE;
+		mhpState <= DST_PHASE;
 		isReadCmd = 0;
-		addrCycleCount = 0;
+		doubleCycleCount = 0;
 	end
-  
+  /*
 	else begin
 		case (state)
 			IDLE: begin
@@ -88,7 +91,7 @@ always @(posedge i_clk) begin
 					if (i_wready) begin
 						isReadCmd <= 0;
 					//ethernet is ready to receive from us
-						state <= DST_PHASE;
+						mhpState <= DST_PHASE;
 					end
 				end else begin
 				//receiving
@@ -221,13 +224,14 @@ always @(posedge i_clk) begin
 			end
 		endcase
 	end
-  /*
+  */
   else begin
     case (state)
       IDLE: begin
         w_data  <= 0;
         w_valid <= 0;
         done    <= 0;
+		  doubleCycleCount <= 0;
         if (i_rready) begin // received frame's payload ready
           r_req   <= 1;     // r_req set before read state, so we can expect valid data in READ state
           state   <= READ;
@@ -235,8 +239,63 @@ always @(posedge i_clk) begin
           r_req   <= 0;
       end
       READ: begin
-        if (i_rready) // clear fifo
-          r_req   <= 1;
+        if (i_rready)
+				case (mhpState)
+					DST_PHASE: begin
+					  doubleCycleCount <= 1;
+					  if (doubleCycleCount == 0)
+							destMhpAddr[15:8] <= i_rdata;
+					  else begin
+							doubleCycleCount <= 0;
+							destMhpAddr[7:0] <= i_rdata;
+							mhpState <= SRC_PHASE;
+						end
+					end
+					
+					SRC_PHASE: begin
+						doubleCycleCount <= 1;
+					  if (doubleCycleCount == 0)
+							srcMhpAddr[15:8] <= i_rdata;
+					  else begin
+							doubleCycleCount <= 0;
+							srcMhpAddr[7:0] <= i_rdata;
+							mhpState <= SIZE_PHASE;
+						end
+					end
+					
+					SIZE_PHASE: begin
+						doubleCycleCount <= 1;
+						if (doubleCycleCount == 0) begin
+							payloadSize[15:8] <= i_rdata;
+						end else begin
+							doubleCycleCount <= 0;
+							payloadSize[7:0] <= i_rdata;
+							mhpState <= DTYPE_PHASE;
+						end
+					end
+					
+					DTYPE_PHASE: begin
+						mhpType <= i_rdata;
+						if (payloadSize == 16'h0000)
+							mhpState <= SCS_PHASE;
+						else
+							mhpState <= PAYLOAD_PHASE;
+					end
+					PAYLOAD_PHASE: begin
+						mhpState <= SCS_PHASE;
+					end
+					
+					SCS_PHASE: begin
+						doubleCycleCount <= 1;
+						if (doubleCycleCount == 0) begin
+							srsChkSum[15:8] <= i_rdata;
+						end else begin
+							doubleCycleCount <= 0;
+							srsChkSum[7:0] <= i_rdata;
+							mhpState <= DST_PHASE;
+						end
+					end
+				endcase
         else begin
           r_req   <= 0;
           done    <= 1;
@@ -251,13 +310,13 @@ always @(posedge i_clk) begin
       end
     endcase
   end
-  */
+  
 end
 
 assign o_dst = destMhpAddr; //dst,
 assign o_src = srcMhpAddr;//src,
 assign o_size = payloadSize;//size,
-assign o_dtype = {!isReadCmd,mhpType};//dtype,
+assign o_dtype = mhpType;//dtype,
 
 assign    o_done   = done;
 assign    o_rreq   = r_req;
