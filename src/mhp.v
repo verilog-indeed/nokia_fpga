@@ -59,6 +59,8 @@ reg [15:0] srsChkSum;
 reg [7:0] mhpType;
 reg dataDir;
 
+reg [15:0] payloadCount;
+
 reg[15:0] dst;
 reg[15:0] src;
 reg[15:0] size;
@@ -278,11 +280,15 @@ always @(posedge i_clk) begin
 						mhpType <= i_rdata;
 						if (payloadSize == 16'h0000)
 							mhpState <= SCS_PHASE;
-						else
+						else begin
+							payloadCount <= payloadSize;	
 							mhpState <= PAYLOAD_PHASE;
+						end
 					end
 					PAYLOAD_PHASE: begin
-						mhpState <= SCS_PHASE;
+						payloadCount <= payloadCount - 1;
+						if (payloadCount == 1 || payloadCount == 0)
+							mhpState <= SCS_PHASE;
 					end
 					
 					SCS_PHASE: begin
@@ -305,7 +311,69 @@ always @(posedge i_clk) begin
       WRITE: begin    //  write data
         if (i_wready) begin
           w_valid <= 1;
-          state   <=  IDLE;
+			 case (mhpState)
+					DST_PHASE: begin
+					//TODO: temporary hack to get past MHP address
+					  doubleCycleCount <= 1;
+					  if (doubleCycleCount == 0)
+							w_data <= 8'hFF;
+					  else begin
+							doubleCycleCount <= 0;
+							w_data <= 8'hFF;
+							mhpState <= SRC_PHASE;
+						end
+					end
+					
+					SRC_PHASE: begin
+						doubleCycleCount <= 1;
+					  if (doubleCycleCount == 0)
+							w_data <= 8'h00;
+					  else begin
+							doubleCycleCount <= 0;
+							w_data <= 8'h00;
+							mhpState <= SIZE_PHASE;
+						end
+					end
+					
+					SIZE_PHASE: begin
+						doubleCycleCount <= 1;
+						if (doubleCycleCount == 0) begin
+							w_data <= 8'h00;
+						end else begin
+							doubleCycleCount <= 0;
+							w_data <= 8'h00;
+							mhpState <= DTYPE_PHASE;
+						end
+					end
+					
+					DTYPE_PHASE: begin
+						w_data <= 8'h83;
+						mhpState <= SCS_PHASE;
+						/*
+						if (payloadSize == 16'h0000)
+							mhpState <= SCS_PHASE;
+						
+						else
+							mhpState <= PAYLOAD_PHASE;
+							*/
+					end
+					PAYLOAD_PHASE: begin
+						mhpState <= SCS_PHASE;
+					end
+					
+					SCS_PHASE: begin
+						doubleCycleCount <= 1;
+						if (doubleCycleCount == 0) begin
+							w_data <= 8'h00;
+						end else begin
+							doubleCycleCount <= 0;
+							w_data <= 8'h00;
+							mhpState <= DST_PHASE;
+							state <= IDLE;
+						end
+					end
+				endcase
+          //state   <=  IDLE;
         end
       end
     endcase
